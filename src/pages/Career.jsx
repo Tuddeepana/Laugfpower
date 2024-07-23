@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import ListComponent from '../components/list/ListComponent';
-import Navigation from '../utils/Navigation';
+import Footer from '../utils/Footer';
 
 
 export default function Career() {
@@ -13,11 +13,9 @@ export default function Career() {
   ];
 
   return (
-   
     <div className="p-6">
-       <Navigation/>
 
-      <h1 className='text-center text-blue-900 font-bold text-4xl mt-10'>
+      <h1 className='text-center text-blue-900 font-bold text-4xl'>
         Join our team and start your career journey with us.
       </h1>
 
@@ -46,7 +44,7 @@ export default function Career() {
           View current vacancies
         </a>
       </div>
-
+   <Footer/>
     </div>
   );
 }
