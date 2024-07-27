@@ -1,16 +1,18 @@
 import React from "react";
 
+
 const BumpCrumbx= ({Current})=>{
     return (
-        <section className=" py-4 border-b border-gray-200 bg-green-600">
-        <div className="container  ps-20">
+      
+        <section className="py-4 bg-green-600 border-b border-gray-200 ">
+        <div className="container ps-20">
           <ol className="flex space-x-2">
-            <li>
+            {/* <li>
               <a href="" className="text-white hover:underline">Home / </a>
-            </li>
-            <li className="text-white">{Current}</li>
+            </li> */}
+            {/* <li className="text-white">{Current}</li> */}
           </ol>
-          <h2 className="text-2xl text-white mt-2">{Current}</h2>
+          <h2 className="mt-2 text-2xl text-white">{Current}</h2>
         </div>
       </section>
     );

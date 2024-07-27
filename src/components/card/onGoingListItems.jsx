@@ -1,5 +1,7 @@
 import React from 'react';
-import BumpCrumbx from './BreadCrumb';
+import Navigation from '../../utils/Navigation';
+import Footer from '../../utils/Footer';
+
 
 const OngoingProjects = () => {
   const projects = [
@@ -25,21 +27,25 @@ const OngoingProjects = () => {
   ];
 
   return (
+    <div>
+      <Navigation/>
+      <br></br>
+      <br></br>
     <main className="px-4 mx-20">
       {/* Portfolio Details Section */}
-      <section className="py-6">
+      <section className="p-6 py-6">
         <div className="container mx-auto">
           {projects.map(project => (
-            <div key={project.id} className="flex flex-col lg:flex-row mb-8 border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
               <div className="w-full lg:w-1/3">
                 <img
-                  className="w-full h-64 object-cover"
+                  className="object-cover w-full h-64"
                   src={project.imgSrc}
                   alt={project.title}
                 />
               </div>
-              <div className="w-full lg:w-2/3 p-6">
-                <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
+              <div className="w-full p-6 lg:w-2/3">
+                <h2 className="mb-4 text-2xl font-semibold">{project.title}</h2>
                 <p className="text-gray-700">{project.description}</p>
               </div>
             </div>
@@ -47,6 +53,9 @@ const OngoingProjects = () => {
         </div>
       </section>
     </main>
+    <Footer/>
+
+    </div>
   );
 };
 

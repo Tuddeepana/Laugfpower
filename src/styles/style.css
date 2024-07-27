@@ -1,0 +1,7 @@
+/* Add custom gradient border class */
+.border-gradient {
+    border-image: linear-gradient(to right, #329946, #99c83b);
+    border-image-slice: 1;
+    border-radius: 10PX;
+  }
+  

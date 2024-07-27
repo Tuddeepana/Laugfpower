@@ -1,10 +1,10 @@
-
 import Footer from '../../utils/Footer';
+import Navigation from '../../utils/Navigation';
 
 // Reusable heading component
 const ReusableHeading = ({ children, className = '' }) => {
   return (
-    <h3 className={`text-start text-green-500 font-semibold text-1xl mt-8 ${className}`}>
+    <h3 className={`text-start text-green-500 font-semibold text-2xl mt-8 ${className}`}>
       {children}
     </h3>
   );
@@ -13,7 +13,7 @@ const ReusableHeading = ({ children, className = '' }) => {
 // Reusable paragraph component
 const ReusableParagraph = ({ paragraph, className = '' }) => {
   return (
-    <p className={`mt-4 text-justify mb-6 ${className}`}>
+    <p className={`mt-4 text-justify mb-6 text-lg ${className}`}>
       {paragraph}
     </p>
   );
@@ -22,8 +22,8 @@ const ReusableParagraph = ({ paragraph, className = '' }) => {
 // Reusable card component
 const ReusableCard = ({ title, children, animationClass }) => {
   return (
-    <div className={`p-6 bg-white rounded-lg shadow-md animate__animated ${animationClass}`}>
-      <h2 className="text-2xl font-semibold mb-4 text-green-600">{title}</h2>
+    <div className={`p-6 bg-white rounded-lg shadow-lg border-2 border-gray-200 hover:border-blue-500 transition-all duration-300 animate__animated ${animationClass}`}>
+      <h2 className="mb-4 text-2xl font-semibold text-green-600">{title}</h2>
       <p>{children}</p>
     </div>
   );
@@ -31,13 +31,15 @@ const ReusableCard = ({ title, children, animationClass }) => {
 
 export default function AboutUs() {
   return (
-    <div className='p-6'>
-      <h1 className='text-center font-bold text-blue-900 text-3xl mb-6'>
+    <div className='p-6 bg-gray-50'>
+      <Navigation/>
+      <br></br>
+      <h1 className='p-6 mb-6 text-4xl font-bold text-center text-blue-900'>
         About LAUGFS Power PLC
       </h1>
 
       {/* About us page body (1) */}
-      <div className="flex flex-col md:flex-row items-start mb-8">
+      <div className="flex flex-col items-start mb-8 md:flex-row">
         <div className="flex-1 md:mr-6">
           <ReusableHeading>
             Powering a Greener Tomorrow
@@ -49,12 +51,12 @@ export default function AboutUs() {
           />
         </div>
         <div className="flex-none w-full md:w-1/3">
-          <img src="path/to/your/image.jpg" alt="Description of image" className="w-full h-auto object-cover" />
+          <img src="path/to/your/image.jpg" alt="Description of image" className="object-cover w-full h-auto rounded-lg shadow-lg" />
         </div>
       </div>
 
       {/* About us page body (2) */}
-      <div className="flex flex-col md:flex-row items-start mb-8">
+      <div className="flex flex-col items-start mb-8 md:flex-row">
         <div className="flex-1 md:mr-6">
           <ReusableHeading>
             Innovating a Green Energy Transformation
@@ -69,7 +71,7 @@ export default function AboutUs() {
       </div>
 
       {/* About us page body (3) */}
-      <div className="flex flex-col md:flex-row items-start mb-8">
+      <div className="flex flex-col items-start mb-8 md:flex-row">
         <div className="flex-1 md:mr-6">
           <ReusableHeading>
             Empowering People & Planet
@@ -84,7 +86,7 @@ export default function AboutUs() {
       </div>
 
       {/* About us page body (4) */}
-      <div className="flex flex-col md:flex-row items-start mb-8">
+      <div className="flex flex-col items-start mb-8 md:flex-row">
         <div className="flex-1 md:mr-6">
           <ReusableHeading>
             Join the Clean Energy Revolution
@@ -100,7 +102,7 @@ export default function AboutUs() {
 
       {/* Vision and Mission Cards */}
       <div className="container mx-auto my-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* Vision Card */}
           <ReusableCard title="Vision" animationClass="animate__fadeInLeft">
             Power sustainable development across Sri Lanka, fueled by the unlimited opportunities presented by limitless renewable energy solutions.

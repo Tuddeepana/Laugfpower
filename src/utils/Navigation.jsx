@@ -14,20 +14,20 @@ export default function Navigation() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="/">HOME</Nav.Link>
-              <NavDropdown title="ABOUT" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/aboutus">ABOUT</NavDropdown.Item>
-                <NavDropdown.Item href="/milstone">MILESTONE</NavDropdown.Item>
-                <NavDropdown.Item href="/awards">AWARDS</NavDropdown.Item>
-                <NavDropdown.Item href="directors">BOARD OF DIRECTORS</NavDropdown.Item>
+              <Nav.Link href="/" className="nav-link-bold">HOME</Nav.Link>
+              <NavDropdown title="ABOUT" id="basic-nav-dropdown" className="nav-link-bold">
+                <NavDropdown.Item href="/aboutus" className="nav-link-bold">ABOUT</NavDropdown.Item>
+                <NavDropdown.Item href="/milstone" className="nav-link-bold">MILESTONE</NavDropdown.Item>
+                <NavDropdown.Item href="/awards" className="nav-link-bold">AWARDS</NavDropdown.Item>
+                <NavDropdown.Item href="directors" className="nav-link-bold">BOARD OF DIRECTORS</NavDropdown.Item>
               </NavDropdown>
 
-              <NavDropdown title="PROJECTS" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">ONGOING PROJECTS</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">PROJECTS IN THE PIPELINE</NavDropdown.Item>
+              <NavDropdown title="PROJECTS" id="basic-nav-dropdown" className="nav-link-bold">
+                <NavDropdown.Item href="/ongoin" className="nav-link-bold">ONGOING PROJECTS</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2" className="nav-link-bold">PROJECTS IN THE PIPELINE</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link">INVESTOR RELATIONS</Nav.Link>
-              <Nav.Link href="#link">CAREERS</Nav.Link>
+              <Nav.Link href="/invstor" className="nav-link-bold">INVESTOR RELATIONS</Nav.Link>
+              <Nav.Link href="/career" className="nav-link-bold">CAREERS</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -36,6 +36,9 @@ export default function Navigation() {
       <style>{`
         .navbar-nav {
           margin-left: auto; /* This will push items to the right */
+        }
+        .nav-link-bold {
+          font-weight: bold;
         }
       `}</style>
     </div>

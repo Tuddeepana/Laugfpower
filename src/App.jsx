@@ -11,6 +11,8 @@ import Aboutus from "./pages/about/Aboutus";
 import Milestone from './pages/about/Milestone';
 import Directors from './pages/about/Directors';
 import Awards from './pages/about/Awards';
+import OngoingProjects from './components/card/onGoingListItems';
+
 
 
 
@@ -19,14 +21,15 @@ export default function App() {
     <div>
     <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/career" element={<Career />} />
-    <Route path="invstor" element={<Investors />} />
+    <Route path="/career" element={<Career/>} />
+    <Route path="/invstor" element={<Investors />} />
     <Route path="/aboutus" element={<Aboutus />} />
     <Route path="/herosection" element={<HeroSection />} />
     <Route path="/milestone" element={<Milestone/>} />
     <Route path="/directors" element={<Directors/>} />
     <Route path="/awards" element={<Awards/>} />
     <Route path="/aboutus" element={<Aboutus/>} />
+    <Route path="/ongoin" element={<OngoingProjects/>} />
     
     </Routes>
      
