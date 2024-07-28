@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../../utils/Navigation';
 import Footer from '../../utils/Footer';
 
+
 // Reusable award card component
 const AwardCard = ({ imageSrc, heading, subheading, description }) => {
   return (
@@ -9,8 +10,8 @@ const AwardCard = ({ imageSrc, heading, subheading, description }) => {
       <div className="flex flex-col items-center">
         <img src={imageSrc} alt={heading} className="object-cover w-full h-48 mb-4 rounded-lg" />
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-blue-900">{heading}</h2>
-          <h3 className="mt-2 text-xl font-semibold text-gray-700">{subheading}</h3>
+          <h3 className="text-2xl font-bold text-blue-900">{heading}</h3>
+          <h4 className="mt-2 text-xl font-semibold text-gray-700">{subheading}</h4>
           <p className="mt-4 text-gray-600">{description}</p>
         </div>
       </div>
@@ -30,26 +31,26 @@ export default function Awards() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Award 1 */}
             <AwardCard
-              imageSrc="path/to/award1-image.jpg"
-              heading="Best Innovation Award"
-              subheading="Technology Excellence"
-              description="Recognized for outstanding innovation in technology, this award highlights our commitment to pioneering advanced solutions."
+              imageSrc='{Mahaweli}'
+              heading="1st Place - Mahaweli Entrepreneurship Presidential Award"
+              subheading="2019"
+              description="The best Mahaweli Entrepreneur of the Sustainable Energy Generation Sector. LAUGFS Solar Power Plants, System Walawa."
             />
             
             {/* Award 2 */}
             <AwardCard
-              imageSrc="path/to/award2-image.jpg"
-              heading="Top Green Initiative"
-              subheading="Sustainability Leadership"
-              description="Awarded for our leadership in sustainable practices and contributions towards a greener environment."
+              imageSrc='{img1}'
+              heading="TAGS AWARDS - Power & Energy Sector"
+              subheading="2022"
+              description="Compliance Award: LAUGFS Power PLC."
             />
 
             {/* Award 3 */}
             <AwardCard
-              imageSrc="path/to/award3-image.jpg"
-              heading="Best Customer Service"
-              subheading="Excellence in Support"
-              description="Celebrated for exceptional customer service and support, reflecting our dedication to client satisfaction."
+              imageSrc='{img3}'
+              heading="RENEWABLE ENERGY GENERATION"
+              subheading="2021-2022"
+              description="Merit Award: Anorchi Lanka (Pvt) Ltd Solar Power Plant."
             />
 
             {/* Add more AwardCard components as needed */}

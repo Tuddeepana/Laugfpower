@@ -4,6 +4,7 @@ import Footer from '../utils/Footer';
 import Navigation from '../utils/Navigation';
 
 
+import "../styles/style.css";
 
 export default function Career() {
   // Add list of job benefits
