@@ -5,6 +5,11 @@ import Navigation from "../utils/Navigation";
 import ReusableCard from "../components/card/ReusableCard";
 import img from "../assets/gif/video2.gif";
 
+//Importing the images --> Project in pipeline
+import Project1 from '../assets/img/pipline/project1.jpg';
+import Project2 from '../assets/img/pipline/project2.jpg';
+import Project3 from '../assets/img/pipline/project3.jpg';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -112,7 +117,7 @@ export default function Home() {
                 text2="Location: Hambantota"
                 text3="Commissioned date (expected): 12/2024"
                 buttonText="View More"
-                imageSrc="https://via.placeholder.com/150"
+                imageSrc={Project1}
               />
             </div>
             <div className="w-full px-4 mb-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -122,7 +127,7 @@ export default function Home() {
                 text2="Location: Mannar"
                 text3="Commissioned date (expected): 06/2027"
                 buttonText="View More"
-                imageSrc="https://via.placeholder.com/150"
+                imageSrc={Project2}
               />
             </div>
             <div className="w-full px-4 mb-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -132,7 +137,7 @@ export default function Home() {
                 text2="Location: Hambantota"
                 text3="Commissioned date (expected): 06/2025"
                 buttonText="View More"
-                imageSrc="https://via.placeholder.com/150"
+                imageSrc={Project3}
               />
             </div>
           </div>

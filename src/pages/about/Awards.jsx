@@ -2,6 +2,10 @@ import React from 'react';
 import Navigation from '../../utils/Navigation';
 import Footer from '../../utils/Footer';
 
+//--> Import the images --> Awards
+import Award1 from '../../assets/img/awards/award1.jpg';
+import Award2 from '../../assets/img/awards/award2.jpg';
+import Award3 from '../../assets/img/awards/award3.jpg';
 
 // Reusable award card component
 const AwardCard = ({ imageSrc, heading, subheading, description }) => {
@@ -31,7 +35,7 @@ export default function Awards() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Award 1 */}
             <AwardCard
-              imageSrc='{Mahaweli}'
+              imageSrc={Award1}
               heading="1st Place - Mahaweli Entrepreneurship Presidential Award"
               subheading="2019"
               description="The best Mahaweli Entrepreneur of the Sustainable Energy Generation Sector. LAUGFS Solar Power Plants, System Walawa."
@@ -39,7 +43,7 @@ export default function Awards() {
             
             {/* Award 2 */}
             <AwardCard
-              imageSrc='{img1}'
+              imageSrc={Award2}
               heading="TAGS AWARDS - Power & Energy Sector"
               subheading="2022"
               description="Compliance Award: LAUGFS Power PLC."
@@ -47,7 +51,7 @@ export default function Awards() {
 
             {/* Award 3 */}
             <AwardCard
-              imageSrc='{img3}'
+              imageSrc={Award3}
               heading="RENEWABLE ENERGY GENERATION"
               subheading="2021-2022"
               description="Merit Award: Anorchi Lanka (Pvt) Ltd Solar Power Plant."

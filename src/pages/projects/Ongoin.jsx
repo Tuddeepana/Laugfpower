@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const OngoingProjects = () => {
   const projects = [
     {
@@ -12,13 +11,20 @@ const OngoingProjects = () => {
         I makes an important contribution to the nation’s renewable energy goals.`,
       imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
     },
+    // {
+    //   id: 'o2',
+    //   title: 'Ranmudu Oya III Mini Hydro Power Plant',
+    //   description: `Situated in Marathanna, Balangoda, the Ranmudu Oya III Mini Hydro Power Plant was commissioned on the
+    //     12th of November 2015. Featuring two Turgo turbines harnessing the power of flowing water, this plant
+    //     operates at a net head of 78 meters and a flow rate of 0.84 m3/s. With an installed capacity of 550 kW,
+    //     it stands as a valuable addition to Sri Lanka’s clean energy sector.`,
+    //   imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
+    // },
     {
-      id: 'o2',
-      title: 'Ranmudu Oya III Mini Hydro Power Plant',
-      description: `Situated in Marathanna, Balangoda, the Ranmudu Oya III Mini Hydro Power Plant was commissioned on the
-        12th of November 2015. Featuring two Turgo turbines harnessing the power of flowing water, this plant
-        operates at a net head of 78 meters and a flow rate of 0.84 m3/s. With an installed capacity of 550 kW,
-        it stands as a valuable addition to Sri Lanka’s clean energy sector.`,
+      id: 'o3',
+      title: 'Embilipitiya 2 SBSPII Solar Power Plants',
+      description: `Commissioned on the 23rd of October 2019, the Embilipitiya 2 SBSPII Solar Power Plant is located in Embilipitiya. With an installed capacity of 1 MW, 
+      these solar power plants harness the abundant sunlight to generate clean energy.`,
       imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
     },
     // Add other projects here...
