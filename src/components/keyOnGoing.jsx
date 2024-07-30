@@ -11,6 +11,7 @@ import Modal from 'react-modal';
 Modal.setAppElement('#root'); // Ensure accessibility
 
 const projects = [
+  //Projects Hydro
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'Ranmudu Oya I Mini Hydro Power Plant',
@@ -20,35 +21,42 @@ const projects = [
 
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
-    title: 'Ranmudu Oya I Mini Hydro Power Plant',
+    title: 'Ranmudu Oya lii Mini Hydro Power Plant',
     filter: 'filter-hydro',
     link: ''
   },
+
+
+  //Solar Projects
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
-    title: 'Ranmudu Oya I Mini Hydro Power Plant',
-    filter: 'filter-hydro',
-    link: ''
-  },
-  {
-    src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
-    title: 'Ranmudu Oya I Mini Hydro Power Plant',
-    filter: 'filter-hydro',
-    link: ''
-  },
-  {
-    src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
-    title: 'Ranmudu Oya I Mini Hydro Power Plant',
+    title: 'Embilipitiya 2 Sbspii Solar Power Plants',
     filter: 'filter-solar',
     link: ''
   },
 
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
-    title: 'Ranmudu Oya I Mini Hydro Power Plant',
-    filter: 'filter-hydro',
+    title: 'The Rooftop Solar Power Plant at Laugfs Rubber Factory in Horana',
+    filter: 'filter-solar',
     link: ''
   },
+
+  {
+    src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
+    title: 'Rooftop Solar Power Plant at Anantaya Chilaw',
+    filter: 'filter-solar',
+    link: ''
+  },
+
+  {
+    src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
+    title: 'Rooftop Solar Power Plant at Anantaya Passikudah',
+    filter: 'filter-solar',
+    link: ''
+  },
+
+  
   // Add other projects...
 ];
 

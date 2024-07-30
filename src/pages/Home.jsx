@@ -66,7 +66,7 @@ export default function Home() {
       {/* Second Section */}
       {/* Third Section - Pipeline Projects */}
       <div className="mt-6">
-        <h1 className="text-4xl font-bold text-center text-blue-900">
+        <h1 className="text-4xl font-bold text-center text-blue-900 " data-aos="fade-up" data-aos-delay="100">
         How We’re Powering Sustainable Development
         </h1>
       </div>

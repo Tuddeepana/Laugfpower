@@ -6,11 +6,12 @@ import Navigation from '../../utils/Navigation';
 
 
 // Directors data
-import Wegapitiya from '../../assets/img/leaders/bod2.jpg';
+import Wegapitiya from '../../assets/img/leaders/bod1.jpg';
 import Thilak from '../../assets/img/leaders/bod2.jpg';
 import Piyadasa from '../../assets/img/leaders/bod3.jpg';
 import Fernando from '../../assets/img/leaders/bod4.jpg';
-import Amaratunge from '../../assets/img/leaders/bod4.jpg';
+import Amaratunge from '../../assets/img/leaders/bod5.jpg';
+import Goonesinghe from '../../assets/img/leaders/bod6.jpg';
 
 
 
@@ -88,7 +89,7 @@ const directors = [
     Professor Amaratunge sits on a number of other Board of Directors of several corporates as an Independent Director namely Raigam Wayamba Saltern PLC, Citizens Development Business Finance PLC, Sanasa Development Bank PLC, Southern Salt Company (Pvt) Limited and Raigam Wayamba Cereal (Pvt) Limited.`
   },
   {
-    imgSrc: "",
+    imgSrc: Goonesinghe,
     name: "Mr K.R Goonesinghe",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
     linkedIn: "https://www.linkedin.com/in/mayura-fernando-792b0a63/",
