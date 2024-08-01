@@ -3,23 +3,22 @@ import ListComponent from '../components/list/ListComponent';
 import Footer from '../utils/Footer';
 import Navigation from '../utils/Navigation';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 import "../styles/style.css";
 
 export default function Career() {
-  // Add list of job benefits
-  const benefits = [
-    "Competitive salary",
-    "Flexible working hours",
-    "Growth opportunities",
-    "Dynamic work environment"
-  ];
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-6 ">
       <Navigation/>
      
-
+<div data-aos="fade-down">
       <h1 className='p-12 text-3xl font-bold text-center text-blue-900'>
         Join our team and start your career journey with us.
       </h1>
@@ -53,6 +52,7 @@ export default function Career() {
   >
     View current vacancies
   </a>
+  </div>
 </div>
 
 

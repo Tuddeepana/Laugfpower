@@ -19,14 +19,22 @@ import Thirdp from '../assets/reports/pdf/2022.pdf'
 import Forthp from '../assets/reports/pdf/2021.pdf'
 import Fifthp from '../assets/reports/pdf/2020.pdf'
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import "../styles/style.css";
 
 export default function Investors() {
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className='p-6'>
       <Navigation />
+
+      <div data-aos="fade-down"> 
       <br />
       <h1 className='p-6 text-4xl font-bold text-center text-blue-900'>
         LAUGFS Power PLC Investor Relations Hub
@@ -76,6 +84,7 @@ export default function Investors() {
         As a prominent figure in Sri Lanka’s renewable energy landscape, we offer a range of rewarding career paths in the sector. Explore our current job openings
         and discover how you can contribute to our mission of powering a sustainable future.
       </p>
+      </div>
 
       <Footer />
     </div>

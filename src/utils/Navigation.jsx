@@ -3,20 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/icons/Logo/laugfspower.png'; 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+
+
 
 
 export default function Navigation() {
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  
   return (
     <div >
       <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-        <Container data-aos="fade-down">
+        <Container >
           <img className="w-auto h-9" src={Logo} alt="LAUGFS Logo" />
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

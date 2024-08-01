@@ -1,6 +1,14 @@
 import React from 'react';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const OngoingProjects = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const projects = [
     {
       id: 'o1',
@@ -33,6 +41,7 @@ const OngoingProjects = () => {
   return (
     <main className="px-4 mx-20">
       {/* Portfolio Details Section */}
+      <div data-aos="fade-down" >
       <section className="py-6">
         <div className="container mx-auto">
           {projects.map(project => (
@@ -52,6 +61,7 @@ const OngoingProjects = () => {
           ))}
         </div>
       </section>
+      </div>
     </main>
   );
 };

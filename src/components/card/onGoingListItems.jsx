@@ -2,7 +2,15 @@ import React from 'react';
 import Navigation from '../../utils/Navigation';
 import Footer from '../../utils/Footer';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const OngoingProjects = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const projects = [
     {
       id: 'o1',
@@ -99,6 +107,7 @@ const OngoingProjects = () => {
       <br />
       <main className="px-4 mx-20">
         {/* Portfolio Details Section */}
+        <div data-aos="fade-down" >
         <section className="p-6 py-6">
           <div className="container mx-auto">
             {projects.slice(0, 6).map(project => (
@@ -135,6 +144,7 @@ const OngoingProjects = () => {
             ))}
           </div>
         </section>
+        </div>
       </main>
       <Footer />
     </div>

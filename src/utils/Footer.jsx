@@ -15,14 +15,14 @@ export default function Footer() {
               <ul className="mt-6 space-y-5">
                 <li><a href="/milestone" aria-label="Milestones" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">MILESTONES</a></li>
                 <li><a href="/aboutus" aria-label="About Us" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ABOUT US</a></li>
-                <li><a href="#" aria-label="Achievements" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ACHIEVEMENTS</a></li>
+                <li><a href="/awards" aria-label="Achievements" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ACHIEVEMENTS</a></li>
                 <li><a href="/directors" aria-label="Board of Directors" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">BOARD OF DIRECTORS</a></li>
               </ul>
             </div>
             <div className="lg:col-span-2">
               <p className="text-base font-semibold text-gray-900">OUR PROJECTS</p>
               <ul className="mt-6 space-y-4">
-                <li><a href="#" aria-label="Ongoing Projects" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ONGOING PROJECTS</a></li>
+                <li><a href="/ongoin" aria-label="Ongoing Projects" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ONGOING PROJECTS</a></li>
                 <li><a href="#" aria-label="Projects in the Pipeline" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">PROJECTS IN THE PIPELINE</a></li>
               </ul>
             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
           </div>
           <hr className="mt-16 mb-10 border-gray-200" />
-          <div className="sm:flex sm:items-center items-center sm:justify-between">
+          <div className="items-center sm:flex sm:items-center sm:justify-between">
             <p className="text-sm text-gray-600">© 2024 LAUGFS IT. All Rights Reserved</p>
           </div>
         </div>
