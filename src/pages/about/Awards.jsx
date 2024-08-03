@@ -6,6 +6,7 @@ import Footer from '../../utils/Footer';
 import Award1 from '../../assets/img/awards/award1.jpg';
 import Award2 from '../../assets/img/awards/award2.jpg';
 import Award3 from '../../assets/img/awards/award3.jpg';
+import '../../styles/style.css'
 
 // Reusable award card component
 const AwardCard = ({ imageSrc, heading, subheading, description }) => {

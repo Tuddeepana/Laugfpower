@@ -12,6 +12,7 @@ import Milestone from './pages/about/Milestone';
 import Directors from './pages/about/Directors';
 import Awards from './pages/about/Awards';
 import OngoingProjects from './components/card/onGoingListItems';
+import Pipline from './pages/projects/Pipline';
 
 
 
@@ -30,6 +31,7 @@ export default function App() {
     <Route path="/awards" element={<Awards/>} />
     <Route path="/aboutus" element={<Aboutus/>} />
     <Route path="/ongoin" element={<OngoingProjects/>} />
+    <Route path="/pipline" element={<Pipline/>} />
     
     </Routes>
      

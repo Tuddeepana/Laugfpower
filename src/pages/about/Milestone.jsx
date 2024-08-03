@@ -3,132 +3,106 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'; // Import the default styles
 
 import WorkIcon from '@mui/icons-material/Work'; // Import icons from MUI or your preferred library
-import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
 import Navigation from '../../utils/Navigation'; // Ensure this path is correct
 import Footer from '../../utils/Footer';
+import BackgroundImage from '../../assets/img/background/milestone.jpg'; // Import the background image
+
+// Add for this page styles here 
+const dateStyle = {
+  fontWeight: 'bold',
+  fontSize: '1.25rem', // Equivalent to text-xl in Tailwind CSS
+};
+
+const milestoneStyle = {
+  backgroundImage: `url(${BackgroundImage})`, // Use the imported image
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  minHeight: '100vh', // Make sure it covers the full viewport height
+};
 
 export default function Milestone() {
   return (
-    <div>
+    <div style={milestoneStyle}>
       <Navigation />
-<br></br>
-<br></br>
-<br></br>
+      <br />
+      <br />
+      <br />
       <VerticalTimeline>
-      
-
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2019"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<WorkIcon />}
+          date={<span style={dateStyle}>2019</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2018"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">17TH AUGUST</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-          LRooftop Solar Power Plant at Laugfs Rubber Factory, Horana Phase I
-          </p>
+          <h3 style={dateStyle}>11TH JANUARY</h3>
+          <p>Rooftop Solar Power Plant at Laugfs Rubber Factory, Horana Phase II</p>
+          <br />
+          <h3 style={dateStyle}>13TH MARCH</h3>
+          <p>Rooftop Solar Power Plant at Anantaya Chilaw Hotel</p>
+          <br />
+          <h3 style={dateStyle}>23RD OCTOBER</h3>
+          <p>Embilipitiya 2 SBSPII Solar Power Plant</p>
+          <p>Embilipitiya 3 SBSPII Solar Power Plant</p>
+          <br />
+          <h3 style={dateStyle}>12TH DECEMBER</h3>
+          <p>Rooftop Solar Power Plant at Anantaya Passikudah</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2017"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<WorkIcon />}
+          date={<span style={dateStyle}>2018</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">07TH FEBRUARY</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-          Iris (Baruthankanda) Solar Plant Anorchi (Baruthankanda) Solar Plant
-          </p>
+          <h3 style={dateStyle}>17TH AUGUST</h3>
+          <p>Rooftop Solar Power Plant at Laugfs Rubber Factory, Horana Phase I</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2016"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<WorkIcon />}
+          date={<span style={dateStyle}>2017</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
+          // icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">09TH JUNE</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-          Ginigathhena Thiniyagala Mini Hydro Power Plant
-          </p>
+          <h3 style={dateStyle}>07TH FEBRUARY</h3>
+          <p>Iris (Baruthankanda) Solar Plant Anorchi (Baruthankanda) Solar Plant</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2015"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<WorkIcon />}
+          date={<span style={dateStyle}>2016</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
+          // icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">12TH NOVEMBER</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-          Ranmudu Oya III Mini Hydro Power Plant
-          </p>
+          <h3 style={dateStyle}>09TH JUNE</h3>
+          <p>Ginigathhena Thiniyagala Mini Hydro Power Plant</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date=""
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<SchoolIcon />}
+          className="vertical-timeline-element--work"
+          date={<span style={dateStyle}>2015</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
+          // icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>
-            Strategy, Social Media
-          </p>
+          <h3 style={dateStyle}>12TH NOVEMBER</h3>
+          <p>Ranmudu Oya III Mini Hydro Power Plant</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<SchoolIcon />}
+          className="vertical-timeline-element--work"
+          date={<span style={dateStyle}>2014</span>}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
+          // icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design
-          </p>
+          <h3 style={dateStyle}>13TH JANUARY</h3>
+          <p>Ranmudu Oya I Mini Hydro Power Plant</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-          <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-          <p>
-            Creative Direction, Visual Design
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
-

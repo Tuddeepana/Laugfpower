@@ -5,6 +5,7 @@ import PdfIcon from '../assets/icons/source/pdf.png'; // This import seems unuse
 import Navigation from '../utils/Navigation';
 import Footer from '../utils/Footer';  
 
+
 // Pdf Cover pages import to the screen
 import First from '../assets/reports/cover/2024.png';  // 2024-2023 Annual Report
 import Second from '../assets/reports/cover/2023.png'; // 2023-2022 Annual Report
@@ -24,6 +25,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import "../styles/style.css";
+import '../styles/style.css'
 
 export default function Investors() {
   useEffect(() => {

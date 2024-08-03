@@ -29,7 +29,7 @@ export default function Navigation() {
 
               <NavDropdown title="PROJECTS" id="basic-nav-dropdown" className="nav-link-bold">
                 <NavDropdown.Item href="/ongoin" className="nav-link-bold">ONGOING PROJECTS</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="nav-link-bold">PROJECTS IN THE PIPELINE</NavDropdown.Item>
+                <NavDropdown.Item href="/pipline" className="nav-link-bold">PROJECTS IN THE PIPELINE</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/invstor" className="nav-link-bold">INVESTOR RELATIONS</Nav.Link>
               <Nav.Link href="/career" className="nav-link-bold">CAREERS</Nav.Link>
