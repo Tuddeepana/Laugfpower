@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import ListComponent from '../components/list/ListComponent';
+
 import Footer from '../utils/Footer';
 import Navigation from '../utils/Navigation';
 

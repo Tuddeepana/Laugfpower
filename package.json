@@ -17,9 +17,10 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "laugfspower": "file:",
-    "react": "^17.0.0 || ^18.0.0",
+    "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
+    "react-image-lightbox": "^5.1.4",
     "react-router-dom": "^6.26.0",
     "react-vertical-timeline-component": "^3.6.0"
   },
