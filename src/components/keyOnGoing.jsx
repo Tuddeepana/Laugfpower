@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import 'tailwindcss/tailwind.css';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
-import Modal from 'react-modal';
+/* import Lightbox from 'react-image-lightbox'; */
+// import 'react-image-lightbox/style.css';
+/* import Modal from 'react-modal'; */
 
 
 
-Modal.setAppElement('#root'); // Ensure accessibility
+/* Modal.setAppElement('#root');  */// Ensure accessibility
 
 const projects = [
   //Projects Hydro
