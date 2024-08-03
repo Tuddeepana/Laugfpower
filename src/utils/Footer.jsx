@@ -23,13 +23,13 @@ export default function Footer() {
               <p className="text-base font-semibold text-gray-900">OUR PROJECTS</p>
               <ul className="mt-6 space-y-4">
                 <li><a href="/ongoin" aria-label="Ongoing Projects" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ONGOING PROJECTS</a></li>
-                <li><a href="#" aria-label="Projects in the Pipeline" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">PROJECTS IN THE PIPELINE</a></li>
+                <li><a href="/pipline" aria-label="Projects in the Pipeline" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">PROJECTS IN THE PIPELINE</a></li>
               </ul>
             </div>
             <div className="lg:col-span-2">
               <p className="text-base font-semibold text-gray-900">CAREERS</p>
               <ul className="mt-6 space-y-5">
-                <li><a href="#" aria-label="Careers" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">CAREERS</a></li>
+                <li><a href="/career" aria-label="Careers" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">CAREERS</a></li>
               </ul>
             </div>
             <div className="lg:col-span-2">
