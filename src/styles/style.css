@@ -1,0 +1,15 @@
+
+/*FONT IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*GENERAL STYLES--> All pages run with Lato Font*/
+body{
+  font-family: "Lato", sans-serif;
+}
+/* Add custom gradient border class */
+.border-gradient {
+    border-image: linear-gradient(to right, #329946, #99c83b);
+    border-image-slice: 1;
+    border-radius: 10PX;
+  }
+  

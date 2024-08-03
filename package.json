@@ -12,18 +12,16 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.4",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "laugfspower": "file:",
     "react": "^17.0.0 || ^18.0.0",
     "react-bootstrap": "^2.10.4",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "sass": "^1.77.8",
-    "styled-components": "^6.1.12"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
