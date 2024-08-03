@@ -8,6 +8,11 @@ import Award2 from '../../assets/img/awards/award2.jpg';
 import Award3 from '../../assets/img/awards/award3.jpg';
 import '../../styles/style.css'
 
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 // Reusable award card component
 const AwardCard = ({ imageSrc, heading, subheading, description }) => {
   return (
@@ -25,10 +30,14 @@ const AwardCard = ({ imageSrc, heading, subheading, description }) => {
 };
 
 export default function Awards() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="p-6 bg-gray-50">
+    <div className="p-6 bg-gray-50"
+    >
       <Navigation />
-      <main>
+      <main  data-aos="fade-down">
         <h1 className="p-6 mb-12 text-4xl font-bold text-center text-blue-900">Our Awards</h1>
         
         {/* Award Cards Grid */}

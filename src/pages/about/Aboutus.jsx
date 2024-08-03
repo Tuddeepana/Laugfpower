@@ -1,6 +1,10 @@
 import Footer from '../../utils/Footer';
 import Navigation from '../../utils/Navigation';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 // Reusable heading component
 const ReusableHeading = ({ children, className = '' }) => {
   return (
@@ -30,10 +34,15 @@ const ReusableCard = ({ title, children, animationClass }) => {
 };
 
 export default function AboutUs() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className='p-6 bg-gray-50'>
       <Navigation/>
       <br></br>
+      <div data-aos="fade-down">
       <h1 className='p-6 mb-6 text-4xl font-bold text-center text-blue-900'>
         About LAUGFS Power PLC
       </h1>
@@ -111,6 +120,7 @@ export default function AboutUs() {
           <ReusableCard title="Mission" animationClass="animate__fadeInRight">
             To light the path to a greener Sri Lanka by pioneering sustainable energy solutions that brighten lives.
           </ReusableCard>
+        </div>
         </div>
       </div>
 
