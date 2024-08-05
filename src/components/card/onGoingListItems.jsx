@@ -7,10 +7,10 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 const OngoingProjects = () => {
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  
   const projects = [
     {
       id: 'o1',
@@ -98,52 +98,50 @@ const OngoingProjects = () => {
        operating at a net head of 170 meters and a flow rate of 0.52 m3/s.`,
       imgSrc: 'https://example.com/new-project2.png',
     }
+    // Your projects data
   ];
 
   return (
     <div>
       <Navigation />
-      <br />
-      <br />
-      <main className="px-4 mx-20">
-        {/* Portfolio Details Section */}
-        <div data-aos="fade-down" >
-        <section className="p-6 py-6">
-          <div className="container mx-auto">
-            {projects.slice(0, 6).map(project => (
-              <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
-                <div className="w-full lg:w-1/3">
-                  <img
-                    className="object-cover w-full h-64"
-                    src={project.imgSrc}
-                    alt={project.title}
-                  />
+      <main className="max-w-screen-xl px-4 mx-auto">
+        <div data-aos="fade-down">
+          <section className="p-6 py-6">
+            <div className="container mx-auto">
+              {projects.slice(0, 6).map(project => (
+                <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
+                  <div className="w-full lg:w-1/3">
+                    <img
+                      className="object-cover w-full h-64 lg:h-48"
+                      src={project.imgSrc}
+                      alt={project.title}
+                    />
+                  </div>
+                  <div className="w-full p-4 lg:w-2/3 lg:p-6">
+                    <h2 className="mb-4 text-xl font-semibold md:text-2xl">{project.title}</h2>
+                    <p className="text-sm text-gray-700 md:text-base">{project.description}</p>
+                  </div>
                 </div>
-                <div className="w-full p-6 lg:w-2/3">
-                  <h2 className="mb-4 text-2xl font-semibold">{project.title}</h2>
-                  <p className="text-gray-700">{project.description}</p>
+              ))}
+              <h1 className="text-3xl font-bold text-center text-green-800 md:text-4xl">Projects Through Our Subsidiaries</h1>
+              <br />
+              {projects.slice(6).map(project => (
+                <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
+                  <div className="w-full lg:w-1/3">
+                    <img
+                      className="object-cover w-full h-64 lg:h-48"
+                      src={project.imgSrc}
+                      alt={project.title}
+                    />
+                  </div>
+                  <div className="w-full p-4 lg:w-2/3 lg:p-6">
+                    <h2 className="mb-4 text-xl font-semibold md:text-2xl">{project.title}</h2>
+                    <p className="text-sm text-gray-700 md:text-base">{project.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-            <h1 className="text-4xl font-bold text-center text-green-800">Projects Through Our Subsidiaries</h1>
-            <br></br>
-            {projects.slice(6).map(project => (
-              <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
-                <div className="w-full lg:w-1/3">
-                  <img
-                    className="object-cover w-full h-64"
-                    src={project.imgSrc}
-                    alt={project.title}
-                  />
-                </div>
-                <div className="w-full p-6 lg:w-2/3">
-                  <h2 className="mb-4 text-2xl font-semibold">{project.title}</h2>
-                  <p className="text-gray-700">{project.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
       <Footer />

@@ -2,13 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import 'tailwindcss/tailwind.css';
-/* import Lightbox from 'react-image-lightbox'; */
-// import 'react-image-lightbox/style.css';
-/* import Modal from 'react-modal'; */
 
-
-
-/* Modal.setAppElement('#root');  */// Ensure accessibility
 
 const projects = [
   //Projects Hydro
@@ -18,45 +12,37 @@ const projects = [
     filter: 'filter-hydro',
     link: ''
   },
-
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'Ranmudu Oya lii Mini Hydro Power Plant',
     filter: 'filter-hydro',
     link: ''
   },
-
-
-  //Solar Projects
+  // Solar Projects
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'Embilipitiya 2 Sbspii Solar Power Plants',
     filter: 'filter-solar',
     link: ''
   },
-
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'The Rooftop Solar Power Plant at Laugfs Rubber Factory in Horana',
     filter: 'filter-solar',
     link: ''
   },
-
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'Rooftop Solar Power Plant at Anantaya Chilaw',
     filter: 'filter-solar',
     link: ''
   },
-
   {
     src: 'https://laugfspower.lk/ver1/assets/img/ongoing1.PNG',
     title: 'Rooftop Solar Power Plant at Anantaya Passikudah',
     filter: 'filter-solar',
     link: ''
   },
-
-  
   // Add other projects...
 ];
 
@@ -92,10 +78,10 @@ const Portfolio = () => {
         <header className="mb-8 text-center section-header">
           <p className="text-4xl font-semibold text-blue-900">Key Ongoing Projects</p>
         </header>
-        <div className='mx-20 card-wrapper'>
+        <div className='mx-4 sm:mx-20 card-wrapper'>
           <div className="flex justify-center mb-8 row" data-aos="fade-up" data-aos-delay="100">
             <div className="justify-center col-lg-12 d-flex">
-              <ul id="portfolio-flters" className="flex space-x-4">
+              <ul id="portfolio-flters" className="flex flex-wrap space-x-4 sm:space-x-8">
                 <li
                   onClick={() => handleFilterChange('*')}
                   className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${
@@ -120,14 +106,14 @@ const Portfolio = () => {
                 >
                   Hydro
                 </li>
-                <li
+                {/* <li
                   onClick={() => handleFilterChange('filter-wind')}
                   className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${
                     activeFilter === 'filter-wind' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
                   }`}
                 >
                   Wind
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

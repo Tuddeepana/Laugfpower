@@ -6,11 +6,11 @@ export default function Footer() {
     <div>
       <section className="py-10 bg-white sm:pt-16 lg:pt-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
-            <div className="col-span-2 md:col-span-4 xl:pr-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 xl:gap-x-12">
+            <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-4 md:justify-start">
               <img className="w-auto h-9" src={Logo} alt="LAUGFS Logo" />
             </div>
-            <div className="lg:col-span-2">
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
               <p className="text-base font-semibold text-gray-900">ABOUT</p>
               <ul className="mt-6 space-y-5">
                 <li><a href="/milestone" aria-label="Milestones" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">MILESTONES</a></li>
@@ -19,20 +19,20 @@ export default function Footer() {
                 <li><a href="/directors" aria-label="Board of Directors" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">BOARD OF DIRECTORS</a></li>
               </ul>
             </div>
-            <div className="lg:col-span-2">
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
               <p className="text-base font-semibold text-gray-900">OUR PROJECTS</p>
               <ul className="mt-6 space-y-4">
                 <li><a href="/ongoin" aria-label="Ongoing Projects" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">ONGOING PROJECTS</a></li>
                 <li><a href="/pipline" aria-label="Projects in the Pipeline" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">PROJECTS IN THE PIPELINE</a></li>
               </ul>
             </div>
-            <div className="lg:col-span-2">
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
               <p className="text-base font-semibold text-gray-900">CAREERS</p>
               <ul className="mt-6 space-y-5">
                 <li><a href="/career" aria-label="Careers" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">CAREERS</a></li>
               </ul>
             </div>
-            <div className="lg:col-span-2">
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
               <p className="text-base font-semibold text-gray-900">CONTACT US</p>
               <ul className="mt-6 space-y-5">
                 <li><a href="#" aria-label="Address" className="flex text-sm text-gray-800 transition-all duration-200 hover:text-blue-600 focus:text-blue-600">101, Maya Avenue, Colombo 06, Sri Lanka</a></li>

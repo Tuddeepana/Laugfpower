@@ -15,7 +15,6 @@ export default function Pipeline() {
         { head: 'Plant Install ', title: 'Capacity: 10 MW' },
         { head: 'Location: ', title: 'Hambantota' },
         { head: 'Commissioned date (expected): ', title: '12/2024' },
-        
       ],
       imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
     },
@@ -29,21 +28,19 @@ export default function Pipeline() {
       ],
       imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
     },
-
     {
-        id: 'o3',
-        title: 'Sittrakala Solar Power Project',
-        description: [
-          { head: 'Plant Install Capacity:  ', title: '50 MW' },
-          { head: 'Location:', title: 'Hambantota' },
-          { head: 'Commissioned date (expected):', title: '06/2025' }
-        ],
-        imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
-      },
+      id: 'o3',
+      title: 'Sittrakala Solar Power Project',
+      description: [
+        { head: 'Plant Install Capacity:  ', title: '50 MW' },
+        { head: 'Location:', title: 'Hambantota' },
+        { head: 'Commissioned date (expected):', title: '06/2025' }
+      ],
+      imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
+    },
     // ... other projects with similar updates
   ];
 
-  
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -51,14 +48,14 @@ export default function Pipeline() {
   return (
     <div>
       <Navigation />
-      <main className="px-4 mx-20" data-aos="fade-down">
-        <section className="p-6 py-6">
+      <main className="max-w-screen-lg px-4 mx-auto" data-aos="fade-down">
+        <section className="p-6">
           <div className="container mx-auto">
             {projects.slice(0, 6).map(project => (
               <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
                 <div className="w-full lg:w-1/3">
                   <img
-                    className="object-cover w-full h-64"
+                    className="object-cover w-full h-64 sm:h-48"
                     src={project.imgSrc}
                     alt={project.title}
                   />
@@ -75,8 +72,6 @@ export default function Pipeline() {
                 </div>
               </div>
             ))}
-            
-         
           </div>
         </section>
       </main>
