@@ -5,6 +5,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+import Aboutus from '../../assets/img/about/About.jpg';
+
 // Reusable heading component
 const ReusableHeading = ({ children, className = '' }) => {
   return (
@@ -60,7 +62,7 @@ export default function AboutUs() {
           />
         </div>
         <div className="flex-none w-full md:w-1/3">
-          <img src="path/to/your/image.jpg" alt="Description of image" className="object-cover w-full h-auto rounded-lg shadow-lg" />
+          <img src={Aboutus} alt="Description of image" className="object-cover w-full h-auto rounded-lg shadow-lg" />
         </div>
       </div>
 

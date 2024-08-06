@@ -10,6 +10,8 @@ import Project1 from '../assets/img/pipline/project1.jpg';
 import Project2 from '../assets/img/pipline/project2.jpg';
 import Project3 from '../assets/img/pipline/project3.jpg';
 
+//Ongoing projects image import 
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
