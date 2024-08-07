@@ -26,6 +26,7 @@ import { useEffect } from 'react';
 
 import "../styles/style.css";
 import '../styles/style.css'
+import BreadCrum from '../components/card/BreadCrum';
 
 export default function Investors() {
   useEffect(() => {
@@ -35,6 +36,11 @@ export default function Investors() {
   return (
     <div className='p-6'>
       <Navigation />
+
+       {/*add breadcrum */}
+       <div className='p-6'>
+      <BreadCrum text="Investors"/>
+      </div>
 
       <div data-aos="fade-down"> 
       <br />

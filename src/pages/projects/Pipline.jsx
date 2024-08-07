@@ -1,43 +1,27 @@
-import React from 'react';
-import Navigation from '../../utils/Navigation';
-import Footer from '../../utils/Footer';
+import React from "react";
+import Navigation from "../../utils/Navigation";
+import Footer from "../../utils/Footer";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import BreadCrum from "../../components/card/BreadCrum";
 
 export default function Pipeline() {
   const projects = [
     {
-      id: 'o1',
-      title: 'GonnoruwaIV Solar Power Project',
-      description: [
-        { head: 'Plant Install ', title: 'Capacity: 10 MW' },
-        { head: 'Location: ', title: 'Hambantota' },
-        { head: 'Commissioned date (expected): ', title: '12/2024' },
-      ],
-      imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
+      id: "o1",
+      title: "GonnoruwaIV Solar Power Project",
+      description: `Located in Gonnoruwa, Hambantota, on a 50-acre land, this ground-mounted solar power project will generate approximately 22.6 GWh of energy annually once constructed. This power plant will be LAUGFS Power's third 10 MW ground-mounted solar power plant.<br/><br/><b>Commissioned date (expected): 04/2025</b>`,
+      imgSrc: "https://laugfspower.lk/ver1/assets/img/ongoing4.PNG",
     },
     {
-      id: 'o2',
-      title: 'Manthai Wind Power Project',
-      description: [
-        { head: 'Plant Install Capacity: ', title: '50 MW' },
-        { head: 'Location:', title: ' Mannar' },
-        { head: 'Commissioned date (expected):', title: '06/2027' }
-      ],
-      imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
+      id: "o2",
+      title: "Manthai Wind Power Project",
+      description: `This project will be LAUGFS Power’s first wind power plant. It is proposed to be constructed in the Manthai area in the Mannar District and is expected to generate 153 GWh annually when completed.<br/><br/><b>Commissioned date (expected): 06/2027</b>`,
+      imgSrc: "https://laugfspower.lk/ver1/assets/img/ongoing4.PNG",
     },
-    {
-      id: 'o3',
-      title: 'Sittrakala Solar Power Project',
-      description: [
-        { head: 'Plant Install Capacity:  ', title: '50 MW' },
-        { head: 'Location:', title: 'Hambantota' },
-        { head: 'Commissioned date (expected):', title: '06/2025' }
-      ],
-      imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
-    },
+    
     // ... other projects with similar updates
   ];
 
@@ -48,11 +32,18 @@ export default function Pipeline() {
   return (
     <div>
       <Navigation />
+        {/*add breadcrum */}
+        <div className='p-12'>
+      <BreadCrum text="Pipeline"/>
+      </div>
       <main className="max-w-screen-lg px-4 mx-auto" data-aos="fade-down">
         <section className="p-6">
           <div className="container mx-auto">
-            {projects.slice(0, 6).map(project => (
-              <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
+            {projects.slice(0, 6).map((project) => (
+              <div
+                key={project.id}
+                className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row"
+              >
                 <div className="w-full lg:w-1/3">
                   <img
                     className="object-cover w-full h-64 sm:h-48"
@@ -61,14 +52,10 @@ export default function Pipeline() {
                   />
                 </div>
                 <div className="w-full p-6 lg:w-2/3">
-                  <h2 className="mb-4 text-2xl font-semibold">{project.title}</h2>
-                  <ul className="pl-5 text-gray-700 list-disc">
-                    {project.description.map((item, index) => (
-                      <li key={index} className="mb-2">
-                        <strong>{item.head}</strong> {item.title}
-                      </li>
-                    ))}
-                  </ul>
+                  <h2 className="mb-4 text-2xl font-semibold">
+                    {project.title}
+                  </h2>
+                  <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: project.description }} />
                 </div>
               </div>
             ))}

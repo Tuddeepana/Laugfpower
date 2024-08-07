@@ -7,6 +7,7 @@ import StarIcon from '@mui/icons-material/Star';
 import Navigation from '../../utils/Navigation'; // Ensure this path is correct
 import Footer from '../../utils/Footer';
 import BackgroundImage from '../../assets/img/background/milestone.jpg'; // Import the background image
+import BreadCrum from '../../components/card/BreadCrum';
 
 // Add for this page styles here 
 const dateStyle = {
@@ -25,9 +26,15 @@ export default function Milestone() {
   return (
     <div style={milestoneStyle}>
       <Navigation />
+      {/*add breadcrum */}
+      <div className='p-12'>
+      <BreadCrum text="Milestone"/>
+      </div>
+      
       <br />
       <br />
       <br />
+      
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

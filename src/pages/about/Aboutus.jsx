@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import Aboutus from '../../assets/img/about/About.jpg';
+import BreadCrum from '../../components/card/BreadCrum';
 
 // Reusable heading component
 const ReusableHeading = ({ children, className = '' }) => {
@@ -43,6 +44,12 @@ export default function AboutUs() {
   return (
     <div className='p-6 bg-gray-50'>
       <Navigation/>
+
+      {/*add breadcrum */}
+      <div className='p-6'>
+      <BreadCrum text="About Us"/>
+      </div>
+
       <br></br>
       <div data-aos="fade-down">
       <h1 className='p-6 mb-6 text-4xl font-bold text-center text-blue-900'>

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import BumpCrumbx from '../../components/card/BreadCrumb';
+
 import Footer from '../../utils/Footer';
 import Navigation from '../../utils/Navigation';
 
@@ -16,6 +16,7 @@ import Goonesinghe from '../../assets/img/leaders/bod6.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import BreadCrum from '../../components/card/BreadCrum';
 
 
 
@@ -115,7 +116,11 @@ const OurLeadership = () => {
     <div className=" mainwrapper" >
       
       
-        {<BumpCrumbx Current="Board Of Directors"/>}
+       
+      {/*add breadcrum */}
+      <div className='p-6'>
+      <BreadCrum text="Directors"/>
+      </div>
 
        
       <section className="py-10 text-center " data-aos="fade-down"

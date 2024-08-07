@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import "../styles/style.css";
+import BreadCrum from '../components/card/BreadCrum';
 
 export default function Career() {
   useEffect(() => {
@@ -17,7 +18,10 @@ export default function Career() {
   return (
     <div className="p-6 ">
       <Navigation/>
-     
+      {/*add breadcrum */}
+      <div className='p-6'>
+      <BreadCrum text="Career"/>
+      </div>
 <div data-aos="fade-down">
       <h1 className='p-12 text-3xl font-bold text-center text-blue-900'>
         Join our team and start your career journey with us.

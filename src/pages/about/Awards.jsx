@@ -12,6 +12,7 @@ import '../../styles/style.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import BreadCrum from '../../components/card/BreadCrum';
 
 // Reusable award card component
 const AwardCard = ({ imageSrc, heading, subheading, description }) => {
@@ -37,6 +38,12 @@ export default function Awards() {
     <div className="p-6 bg-gray-50"
     >
       <Navigation />
+      
+      {/*add breadcrum */}
+      <div className='p-6'>
+     <BreadCrum text="Awards"/>
+      </div>
+      
       <main  data-aos="fade-down">
         <h1 className="p-6 mb-12 text-4xl font-bold text-center text-blue-900">Our Awards</h1>
         
