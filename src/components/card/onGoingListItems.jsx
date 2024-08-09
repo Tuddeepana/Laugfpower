@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../../utils/Navigation';
 import Footer from '../../utils/Footer';
+import BreadCrum from '../card/BreadCrum';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -105,6 +106,9 @@ const OngoingProjects = () => {
     <div>
       <Navigation />
       <main className="max-w-screen-xl px-4 mx-auto">
+        <div className='pt-10'>
+        <BreadCrum text="Ongoing Projects" />
+        </div>
         <div data-aos="fade-down">
           <section className="p-6 py-6">
             <div className="container mx-auto">
