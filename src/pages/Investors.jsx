@@ -34,12 +34,13 @@ export default function Investors() {
   }, []);
 
   return (
+<div>
     <div className='p-6'>
       <Navigation />
 
        {/*add breadcrum */}
        <div className='p-6'>
-      <BreadCrum text="Investors"/>
+      <BreadCrum text="Investor Relations"/>
       </div>
 
       <div data-aos="fade-down"> 
@@ -94,7 +95,9 @@ export default function Investors() {
       </p>
       </div>
 
-      <Footer />
+
+    </div>
+    <Footer />
     </div>
   );
 }

@@ -84,7 +84,7 @@ const directors = [
     imgSrc: Amaratunge ,
     name: "Prof. S.P.P Amaratunge",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
-    linkedIn: "https://www.linkedin.com/in/mayura-fernando-792b0a63/",
+
     description: `Professor S. P. P. Amaratunge, a visionary builder of organisations, astute university administrator, academic par-excellence, renowned business consultant and humanist is presently serving as the Chairman of the University Grants Commission. He served as the Vice Chancellor, University of Sri Jayewardenepura, and was also appointed as the Chairman of the Committee of Vice Chancellors and Directors Sri Lanka (CVCD) in 2019. His substantial position is as the professor of Business Economics at the University of Sri Jayawardenapura.
 
     Professor Amaratunge, holds a BA (Hons.) in Economics from the University of Sri Jayewardenepura, a MA in Economics from the University of Colombo, a MSc. In Economics of Rural Development from Saga National University and Ph.D. from Kogoshima National University in Japan, counts over 27 years’ service at the University of Sri Jayewardenepura. An authority in Rural Economic Development, Professor Amaratunge has won several awards including the prestigious Research Excellence Award (2002) of the Kyushu Society of Rural Economics, Japan. He has over 75 refereed publications to his credit, both locally and internationally.
@@ -97,7 +97,7 @@ const directors = [
     imgSrc: Goonesinghe,
     name: "Mr K.R Goonesinghe",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
-    linkedIn: "https://www.linkedin.com/in/mayura-fernando-792b0a63/",
+
     description: `Mr. K. R. Goonesinghe is an Attorney-at-Law possessing over 36 years of experience in the Bar, and is a previous Vice President of the Bar Association of Sri Lanka. He is specialised in the areas of Criminal, Civil, Commercial and Arbitration Law.
 
     He presently also serves on the Board of LAUGFS Power PLC as an Independent Non-Executive Director.`

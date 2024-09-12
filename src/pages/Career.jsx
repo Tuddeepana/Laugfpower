@@ -16,10 +16,11 @@ export default function Career() {
   }, []);
 
   return (
+     <div>
     <div className="p-6 ">
       <Navigation/>
-      {/*add breadcrum */}
-      <div className='p-6'>
+      {/*add breadcrumb */}
+      <div className='p-6 w-100'>
       <BreadCrum text="Career"/>
       </div>
 <div data-aos="fade-down">
@@ -60,8 +61,10 @@ export default function Career() {
 </div>
 
 
-   <Footer/>
+
     </div>
+         <Footer/>
+     </div>
   );
 }
 

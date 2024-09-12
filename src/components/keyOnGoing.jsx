@@ -78,7 +78,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-12 portfolio">
+    <section id="portfolio" className="py-12 portfolio bg-[#D6EFD8]">
       <div className="container mx-auto" data-aos="fade-up">
         <header className="mb-8 text-center section-header">
           <p className="text-4xl font-semibold text-blue-900">Key Ongoing Projects</p>
