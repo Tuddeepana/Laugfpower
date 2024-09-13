@@ -35,6 +35,7 @@ export default function Awards() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
+    <div>
     <div className="p-6 bg-gray-50"
     >
       <Navigation />
@@ -78,7 +79,9 @@ export default function Awards() {
           </div>
         </div>
       </main>
-      <Footer />
+   
+    </div>  
+    <Footer />
     </div>
   );
 }
