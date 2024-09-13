@@ -7,9 +7,10 @@ export default function Footer() {
         <section className="py-10 bg-[#F2F4F4] sm:pt-16 lg:pt-24">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 xl:gap-x-12">
-              <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-4 md:justify-start">
+              {/* remove the fooetr icon --> requirment changes */}
+              {/* <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-4 md:justify-start">
                 <img className="w-auto h-9" src={Logo} alt="LAUGFS Logo" />
-              </div>
+              </div> */}
               <div className="col-span-1 md:col-span-2 lg:col-span-1">
                 <p className="text-base font-semibold text-[#2C3E50]">ABOUT</p>
                 <ul className="mt-6 space-y-5">
