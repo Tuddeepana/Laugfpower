@@ -1,25 +1,16 @@
 
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import Footer from '../../utils/Footer';
 import Navigation from '../../utils/Navigation';
-
-
-// Directors data
 import Wegapitiya from '../../assets/img/leaders/bod1.jpg';
 import Thilak from '../../assets/img/leaders/bod2.jpg';
 import Piyadasa from '../../assets/img/leaders/bod3.jpg';
 import Fernando from '../../assets/img/leaders/bod4.jpg';
 import Amaratunge from '../../assets/img/leaders/bod5.jpg';
 import Goonesinghe from '../../assets/img/leaders/bod6.jpg';
-
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 import BreadCrum from '../../components/card/BreadCrum';
-
-
-
 
 const directors = [
   {
@@ -36,8 +27,8 @@ const directors = [
     He served as a Council member of the University of Sri Jayewardenepura. He was a past Chairman of Chamber of Young Lankan Entrepreneurs (COYLE), Federation of Chambers of Commerce and Industry of Sri Lanka (FCCISL) and was an executive committee member of the Ceylon Chamber of Commerce.`
   },
   {
-    imgSrc:Thilak,
-    name: "Mr. U.K. Thilak De Silva",
+    imgSrc: Thilak,
+    name: "Mr. U.K. Thilak De  Silva",
     title: "GROUP DEPUTY CHAIRMAN",
     linkedIn: "https://www.linkedin.com/in/thilak-de-silva-aaa33371/?originalSubdomain=lk",
     description: `Mr. Thilak De Silva presently serves as the Group Deputy Chairman of this highly diversified business conglomerate. The Group is engaged in the widest landscape in business in the country, consisting of LP Gas downstream operations, petroleum fuel distribution, blending, storage distribution and sale of lubricants, maritime services including ownership and management of gas carriers, heavy engineering, vehicle emission testing, property development, leisure and hospitality with ownership and management of star class hotels, consumer retail chains, the manufacture and export of solid tyres, pharmaceuticals and IV solutions, and the generation of hydro, solar and other types of renewable energy.
@@ -68,7 +59,7 @@ const directors = [
     Mr. Kudabalage had occupied top- rung positions in all the sectors he was engaged with. He was the Managing Director/Chief Executive Officer of Sri Lanka Insurance Corporation Limited, Litro Gas Lanka Limited and Canwill Holdings (Private) Limited (Hyatt Hotel Group); former Director of People’s Bank and all its subsidiaries, People’s Leasing & Finance PLC and all its subsidiaries, Seylan Bank PLC, Ceybank Asset Management Limited and Colombo Dockyard PLC; and also the former Chairman of Merchant Bank of Sri Lanka, Ceylon Asset Management PLC and E-Channeling PLC. Presently, Mr. Kudabalage serves as the Chairman of Piccadilly Cafe Limited.`
   },
   {
-    imgSrc:  Fernando,
+    imgSrc: Fernando,
     name: "Mr. P.M.B Fernando",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
     linkedIn: "https://www.linkedin.com/in/mayura-fernando-792b0a63/",
@@ -81,10 +72,9 @@ const directors = [
     He was a Independent, Non-Executive Director and the Chairman of the Audit Committee of DFCC Bank PLC from 2013 to 2022. Currently, he is a Independent, Non-Executive Director of LAUGFS Gas PLC, LAUGFS Power PLC, LAUGFS Eco Sri Ltd., LAUGFS Leisure Ltd., The Lanka Hospitals Corporation PLC, Lanka Hospitals Diagnostics (Pvt) Ltd, Evoke International Ltd, K-Seeds Investments (Pvt) Ltd., Renuka Hotels PLC., DSI Holdings (Pvt) Ltd., and PGP Glass Ceylon PLC.`
   },
   {
-    imgSrc: Amaratunge ,
+    imgSrc: Amaratunge,
     name: "Prof. S.P.P Amaratunge",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
-
     description: `Professor S. P. P. Amaratunge, a visionary builder of organisations, astute university administrator, academic par-excellence, renowned business consultant and humanist is presently serving as the Chairman of the University Grants Commission. He served as the Vice Chancellor, University of Sri Jayewardenepura, and was also appointed as the Chairman of the Committee of Vice Chancellors and Directors Sri Lanka (CVCD) in 2019. His substantial position is as the professor of Business Economics at the University of Sri Jayawardenapura.
 
     Professor Amaratunge, holds a BA (Hons.) in Economics from the University of Sri Jayewardenepura, a MA in Economics from the University of Colombo, a MSc. In Economics of Rural Development from Saga National University and Ph.D. from Kogoshima National University in Japan, counts over 27 years’ service at the University of Sri Jayewardenepura. An authority in Rural Economic Development, Professor Amaratunge has won several awards including the prestigious Research Excellence Award (2002) of the Kyushu Society of Rural Economics, Japan. He has over 75 refereed publications to his credit, both locally and internationally.
@@ -97,7 +87,6 @@ const directors = [
     imgSrc: Goonesinghe,
     name: "Mr K.R Goonesinghe",
     title: "INDEPENDENT NON-EXECUTIVE DIRECTOR",
-
     description: `Mr. K. R. Goonesinghe is an Attorney-at-Law possessing over 36 years of experience in the Bar, and is a previous Vice President of the Bar Association of Sri Lanka. He is specialised in the areas of Criminal, Civil, Commercial and Arbitration Law.
 
     He presently also serves on the Board of LAUGFS Power PLC as an Independent Non-Executive Director.`
@@ -105,70 +94,51 @@ const directors = [
 ];
 
 const OurLeadership = () => {
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-    return (
-      <div>
-        <Navigation/>
-        <br></br>
-    <div className=" mainwrapper" >
-      
-      
-       
-      {/*add breadcrum */}
-      <div className='p-6'>
-      <BreadCrum text="DIRECTORS"/>
-      </div>
 
-       
-      <section className="py-10 text-center " data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500">
-        {/* <h1 className="text-4xl font-bold text-center text-blue-900">Our Leadership</h1> */}
-        <br></br>
-        <p className="max-w-4xl p-4 mx-auto text-lg text-center text-gray-700 border-2 border-gradient">
-          Meet the visionary leaders driving LAUGFS Power PLC towards a sustainable future. Our Board of Directors brings together a wealth of expertise, experience, and a shared passion for renewable energy. Together, they deftly guide our strategic direction and inspire us to remain steadfast in our quest for excellence. Get to know the individuals steering the company’s success and shaping the renewable energy landscape in Sri Lanka.
-        </p>
-        <main className="main">
-          <div className="flex flex-wrap justify-center directors-container">
-            {directors.map((director, index) => (
-              <div
-                key={index}
-                className="relative max-w-xs p-6 m-4 bg-white rounded-lg shadow-lg director-card group"
-              >
-                <img
-                  src={director.imgSrc}
-                  alt={`Director ${index + 1}`}
-                  className="object-scale-down w-full h-48 mb-4 rounded director-image"
-                />
-                <h3 className="mb-2 text-xl font-semibold">{director.name}</h3>
-                <p className="mb-2 font-medium text-center">{director.title}</p>
-                <div className="mb-4 text-center">
-                  <a
-                    href={director.linkedIn}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="text-2xl text-blue-600 fa-brands fa-linkedin"></i>
-                  </a>
+  return (
+    <div>
+      <Navigation />
+      <br />
+      <div className="mainwrapper">
+        <div className='p-6'>
+          <BreadCrum text="DIRECTORS" />
+        </div>
+        <section className="py-10 text-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <br />
+          <p className="max-w-4xl p-4 mx-auto text-lg text-center text-gray-700 border-2 border-gradient">
+            Meet the visionary leaders driving LAUGFS Power PLC towards a sustainable future. Our Board of Directors brings together a wealth of expertise, experience, and a shared passion for renewable energy. Together, they deftly guide our strategic direction and inspire us to remain steadfast in our quest for excellence. Get to know the individuals steering the company’s success and shaping the renewable energy landscape in Sri Lanka.
+          </p>
+          <main className="main">
+            <div className="flex flex-wrap justify-center directors-container">
+              {directors.map((director, index) => (
+                <div key={index} className="relative max-w-xs p-6 m-4 bg-white rounded-lg shadow-lg director-card group">
+                  <img src={director.imgSrc} alt={`Director ${index + 1}`} className="object-scale-down w-full h-48 mb-4 rounded director-image" />
+                  <h3 className="mb-2 text-base font-semibold">{director.name}</h3>
+                  <p className="font-medium text-center text-sm">{director.title}</p>
+                  <div className="mb-4 text-center">
+                    {director.linkedIn && (
+                      <a href={director.linkedIn} target="_" rel="noopener noreferrer" className="ml-2">
+                        <i className="text-2xl text-blue-600 fa-brands fa-linkedin"></i>
+                      </a>
+                    )}
+                  </div>
+                  <div className="overflow-hidden text-left transition-all duration-300 ease-in-out description max-h-0 group-hover:max-h-60 group-hover:overflow-y-auto">
+                    <p className="p-4 scrollbar scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-slate-300 scrollbar-track-slate-100 dark:scrollbar-thumb-slate-500 dark:scrollbar-track-slate-500/[0.16] max-h-60 lg:supports-scrollbars:pr-2 lg:max-h-60" style={{ maxHeight: '200px', overflow: 'scroll', overflowX: 'hidden' }}>
+                      {director.description}
+                    </p>
+                  </div>
                 </div>
-                <div
-                  className="overflow-hidden text-left transition-all duration-300 ease-in-out description max-h-0 group-hover:max-h-60 group-hover:overflow-y-auto ">
-                  <p className="p-4 scrollbar scrollbar-thin  scrollbar-thumb-rounded scrollbar-thumb-slate-300 scrollbar-track-slate-100 dark:scrollbar-thumb-slate-500 dark:scrollbar-track-slate-500/[0.16] max-h-60 lg:supports-scrollbars:pr-2 lg:max-h-60"
-                    style={{ maxHeight: '200px', overflow: 'scroll',overflowX: 'hidden'}}
-                    >{director.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </main>
-      </section>
-      <Footer/>
+              ))}
+            </div>
+          </main>
+        </section>
+        <Footer />
+      </div>
     </div>
-    </div>
-    );
-  };
-  
-  export default OurLeadership;
+  );
+};
+
+export default OurLeadership;
