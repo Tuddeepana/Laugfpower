@@ -45,9 +45,11 @@ export default function Investors() {
 
       <div data-aos="fade-down"> 
       <br />
-      <h1 className='p-6 text-4xl font-bold text-center text-blue-900'>
+
+      {/*Commented the title after requirement Change */}
+      {/* <h1 className='p-6 text-4xl font-bold text-center text-blue-900'>
         LAUGFS Power PLC Investor Relations Hub
-      </h1>
+      </h1> */}
       
       <p className="max-w-4xl p-4 mx-auto text-lg text-center text-gray-700 border-2 border-gradient">
         As a prominent figure in Sri Lanka’s renewable energy landscape, we offer a range of rewarding career paths in the sector. Explore our current job openings
