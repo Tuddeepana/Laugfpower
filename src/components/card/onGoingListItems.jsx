@@ -61,44 +61,45 @@ const OngoingProjects = () => {
       This plant adds to the sustainability of the hotel.`,
       imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
     },
-    {
-      id: 'o7',
-      title: 'Kehelgamu Oya Ii Mini Hydro Power (Pvt) Ltd',
-      description: `The Kehekgamu Oya II Mini Hydro Power Plant is located at Dagampitiya, Ginigathhena. 
-      This state-of-the-art facility will have an installed capacity of 2MW once commissioned`,
-      imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
-    },
-    {
-      id: 'o8',
-      title: 'Iris Eco Power Lanka (Pvt) Ltd – Iris (Baruthankanda) Solar Power Plant',
-      description: `The Iris (Baruthankanda) Solar Power Plant is situated in Hambantota. 
-      With an exceptional installed capacity of 10 MW, this solar power plant commenced operations on the 7th of February 2017. It exemplifies what can be achieved with sustainable energy. Together with the Anorchi (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, 
-      contributing a total of 20 MW to the national grid.`,
-      imgSrc: 'https://example.com/new-project1.png',
-    },
-    {
-      id: 'o9',
-      title: 'Iris Eco Power Lanka (Pvt) Ltd – Embilipitiya 3 Sbspii Solar Power Plant',
-      description: `The Embilipitiya 3 SBSPII Solar Power Plant was commissioned on the 23rd of October 2019, 
-      with a capacity of 1 MW.`,
-      imgSrc: 'https://example.com/new-project2.png',
-    },
+    //--> After requierment updtate commment this field {{IMPORTATANT}}
+    // {
+    //   id: 'o7',
+    //   title: 'Kehelgamu Oya Ii Mini Hydro Power (Pvt) Ltd',
+    //   description: `The Kehekgamu Oya II Mini Hydro Power Plant is located at Dagampitiya, Ginigathhena. 
+    //   This state-of-the-art facility will have an installed capacity of 2MW once commissioned`,
+    //   imgSrc: 'https://laugfspower.lk/ver1/assets/img/ongoing4.PNG',
+    // },
+    // {
+    //   id: 'o8',
+    //   title: 'Iris Eco Power Lanka (Pvt) Ltd – Iris (Baruthankanda) Solar Power Plant',
+    //   description: `The Iris (Baruthankanda) Solar Power Plant is situated in Hambantota. 
+    //   With an exceptional installed capacity of 10 MW, this solar power plant commenced operations on the 7th of February 2017. It exemplifies what can be achieved with sustainable energy. Together with the Anorchi (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, 
+    //   contributing a total of 20 MW to the national grid.`,
+    //   imgSrc: 'https://example.com/new-project1.png',
+    // },
+    // {
+    //   id: 'o9',
+    //   title: 'Iris Eco Power Lanka (Pvt) Ltd – Embilipitiya 3 Sbspii Solar Power Plant',
+    //   description: `The Embilipitiya 3 SBSPII Solar Power Plant was commissioned on the 23rd of October 2019, 
+    //   with a capacity of 1 MW.`,
+    //   imgSrc: 'https://example.com/new-project2.png',
+    // },
 
-    {
-      id: 'o10',
-      title: 'Anorchi Lanka (Pvt) Ltd – Anorchi (Baruthankanda) Solar Power Plant',
-      description: `The Anorchi Solar Power Plant is located in Hambantota and was commissioned on the 7th of February 2017. With an impressive capacity of 10 MW, Together with the Iris (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, 
-      contributing a total of 20 MW to the national grid.`,
-      imgSrc: 'https://example.com/new-project2.png',
-    },
+    // {
+    //   id: 'o10',
+    //   title: 'Anorchi Lanka (Pvt) Ltd – Anorchi (Baruthankanda) Solar Power Plant',
+    //   description: `The Anorchi Solar Power Plant is located in Hambantota and was commissioned on the 7th of February 2017. With an impressive capacity of 10 MW, Together with the Iris (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, 
+    //   contributing a total of 20 MW to the national grid.`,
+    //   imgSrc: 'https://example.com/new-project2.png',
+    // },
 
-    {
-      id: 'o11',
-      title: 'Ginigathhena Thiniyagala Mini Hydro Power (Pvt) Ltd – Ginigathhena Thiniyagala Mini Hydro Power Plant',
-      description: `The Ginigathena Thiniyagala Mini Hydro Power Plant was commissioned on the 9th of June 2016, in Horakada, Ginigathhena. With a robust installation capacity of 700 kW, this plant uses 2 Pelton turbines,
-       operating at a net head of 170 meters and a flow rate of 0.52 m3/s.`,
-      imgSrc: 'https://example.com/new-project2.png',
-    }
+    // {
+    //   id: 'o11',
+    //   title: 'Ginigathhena Thiniyagala Mini Hydro Power (Pvt) Ltd – Ginigathhena Thiniyagala Mini Hydro Power Plant',
+    //   description: `The Ginigathena Thiniyagala Mini Hydro Power Plant was commissioned on the 9th of June 2016, in Horakada, Ginigathhena. With a robust installation capacity of 700 kW, this plant uses 2 Pelton turbines,
+    //    operating at a net head of 170 meters and a flow rate of 0.52 m3/s.`,
+    //   imgSrc: 'https://example.com/new-project2.png',
+    // }
     // Your projects data
   ];
 
@@ -127,7 +128,7 @@ const OngoingProjects = () => {
                   </div>
                 </div>
               ))}
-              <h1 className="text-3xl font-bold text-center text-green-800 md:text-4xl">Projects Through Our Subsidiaries</h1>
+              {/* <h1 className="text-3xl font-bold text-center text-green-800 md:text-4xl">Projects Through Our Subsidiaries</h1> */}
               <br />
               {projects.slice(6).map(project => (
                 <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
