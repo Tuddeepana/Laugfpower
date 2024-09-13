@@ -28,7 +28,7 @@ export default function Milestone() {
       <Navigation />
       {/*add breadcrum */}
       <div className='p-12'>
-      <BreadCrum text="Milestone"/>
+      <BreadCrum text="MILESTONE"/>
       </div>
       
       <br />

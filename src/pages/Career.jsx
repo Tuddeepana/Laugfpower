@@ -21,7 +21,7 @@ export default function Career() {
       <Navigation/>
       {/*add breadcrumb */}
       <div className='p-6 w-100'>
-      <BreadCrum text="Career"/>
+      <BreadCrum text="CARERR"/>
       </div>
 <div data-aos="fade-down">
       <h1 className='p-12 text-3xl font-bold text-center text-blue-900'>

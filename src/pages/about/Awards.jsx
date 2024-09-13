@@ -41,11 +41,11 @@ export default function Awards() {
       
       {/*add breadcrum */}
       <div className='p-6'>
-     <BreadCrum text="Awards"/>
+     <BreadCrum text="AWARDS"/>
       </div>
       
       <main  data-aos="fade-down">
-        <h1 className="p-6 mb-12 text-4xl font-bold text-center text-blue-900">Our Awards</h1>
+        {/* <h1 className="p-6 mb-12 text-4xl font-bold text-center text-blue-900">OUR AWARDS</h1> */}
         
         {/* Award Cards Grid */}
         <div className="container mx-auto">

@@ -119,14 +119,14 @@ const OurLeadership = () => {
        
       {/*add breadcrum */}
       <div className='p-6'>
-      <BreadCrum text="Directors"/>
+      <BreadCrum text="DIRECTORS"/>
       </div>
 
        
       <section className="py-10 text-center " data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-        <h1 className="text-4xl font-bold text-center text-blue-900">Our Leadership</h1>
+        {/* <h1 className="text-4xl font-bold text-center text-blue-900">Our Leadership</h1> */}
         <br></br>
         <p className="max-w-4xl p-4 mx-auto text-lg text-center text-gray-700 border-2 border-gradient">
           Meet the visionary leaders driving LAUGFS Power PLC towards a sustainable future. Our Board of Directors brings together a wealth of expertise, experience, and a shared passion for renewable energy. Together, they deftly guide our strategic direction and inspire us to remain steadfast in our quest for excellence. Get to know the individuals steering the company’s success and shaping the renewable energy landscape in Sri Lanka.

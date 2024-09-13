@@ -47,14 +47,15 @@ export default function AboutUs() {
 
       {/*add breadcrum */}
       <div className='p-6'>
-      <BreadCrum text="About Us"/>
+      <BreadCrum text="ABOUT US"/>
       </div>
 
       <br></br>
       <div data-aos="fade-down">
-      <h1 className='p-6 mb-6 text-4xl font-bold text-center text-blue-900'>
+        {/*remove the heading*/}
+      {/* <h1 className='p-6 mb-6 text-4xl font-bold text-center text-blue-900'>
         About LAUGFS Power PLC
-      </h1>
+      </h1> */}
 
       {/* About us page body (1) */}
       <div className="flex flex-col items-start mb-8 md:flex-row">

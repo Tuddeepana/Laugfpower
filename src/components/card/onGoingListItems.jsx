@@ -108,7 +108,7 @@ const OngoingProjects = () => {
       <Navigation />
       <main className="max-w-screen-xl px-4 mx-auto">
         <div className='pt-10'>
-        <BreadCrum text="Ongoing Projects" />
+        <BreadCrum text="ONGOING PROJECTS" />
         </div>
         <div data-aos="fade-down">
           <section className="p-6 py-6">
