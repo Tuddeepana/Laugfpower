@@ -9,6 +9,8 @@ import Footer from '../../utils/Footer';
 import BackgroundImage from '../../assets/img/background/milestone.jpg'; // Import the background image
 import BreadCrum from '../../components/card/BreadCrum';
 
+
+
 // Add for this page styles here 
 const dateStyle = {
   fontWeight: 'bold',
@@ -28,14 +30,14 @@ export default function Milestone() {
       <Navigation />
       {/*add breadcrum */}
       <div className='p-12'>
-      <BreadCrum text="MILESTONE"/>
+        <BreadCrum text="MILESTONE" />
       </div>
-      
+
       <br />
       <br />
       <br />
-      
-      <VerticalTimeline>
+
+      {/* <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date={<span style={dateStyle}>2019</span>}
@@ -108,8 +110,31 @@ export default function Milestone() {
           iconStyle={{ background: 'linear-gradient(135deg, rgb(46, 155, 71), rgb(158, 210, 61))', color: '#fff' }}
           icon={<StarIcon />}
         />
-      </VerticalTimeline>
+      </VerticalTimeline> */}
+    <div className="flex-grow">
+    <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
+      </div>
     </div>
   );
 }
