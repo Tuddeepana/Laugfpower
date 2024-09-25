@@ -16,8 +16,17 @@ import AnantayaPassikudah from '../../assets/img/ongoin/AnantayaPasi.jpg';
 const OngoingProjects = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
+
+    // Scroll to the project based on the hash fragment
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }, []);
-  
+
   const projects = [
     {
       id: 'o1',
@@ -70,36 +79,36 @@ const OngoingProjects = () => {
   ];
 
   return (
-    <div>
-      <Navigation />
-      <main className="max-w-screen-xl px-4 mx-auto">
-        <div className='pt-10'>
-          <BreadCrum text="ONGOING PROJECTS" />
-        </div>
-        <div data-aos="fade-down">
-          <section className="p-6 py-6">
-            <div className="container mx-auto">
-              {projects.map(project => (
-               <div key={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
-               <div className="w-full lg:w-1/3 h-64 lg:h-64">
-                 <img
-                   className="object-cover w-full h-full"
-                   src={project.imgSrc}
-                   alt={project.title}
-                 />
-               </div>
-               <div className="w-full p-4 lg:w-2/3 lg:p-6">
-                 <h2 className="mb-4 text-xl font-semibold md:text-2xl">{project.title}</h2>
-                 <p className="text-sm text-gray-700 md:text-base">{project.description}</p>
-               </div>
-             </div>
-              ))}
-            </div>
-          </section>
-        </div>
-      </main>
-      <Footer />
-    </div>
+      <div>
+        <Navigation />
+        <main className="max-w-screen-xl px-4 mx-auto">
+          <div className='pt-10'>
+            <BreadCrum text="ONGOING PROJECTS" />
+          </div>
+          <div data-aos="fade-down">
+            <section className="p-6 py-6">
+              <div className="container mx-auto">
+                {projects.map(project => (
+                    <div key={project.id} id={project.id} className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row">
+                      <div className="w-full lg:w-1/3 h-64 lg:h-64">
+                        <img
+                            className="object-cover w-full h-full"
+                            src={project.imgSrc}
+                            alt={project.title}
+                        />
+                      </div>
+                      <div className="w-full p-4 lg:w-2/3 lg:p-6">
+                        <h2 className="mb-4 text-xl font-semibold md:text-2xl">{project.title}</h2>
+                        <p className="text-sm text-gray-700 md:text-base">{project.description}</p>
+                      </div>
+                    </div>
+                ))}
+              </div>
+            </section>
+          </div>
+        </main>
+        <Footer />
+      </div>
   );
 };
 
