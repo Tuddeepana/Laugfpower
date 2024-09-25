@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import 'tailwindcss/tailwind.css';
@@ -16,38 +17,38 @@ const projects = [
     src: Ranmuduoyai,
     title: 'Ranmudu Oya I Mini Hydro Power Plant',
     filter: 'filter-hydro',
-    link: ''
+    link: '/ongoin'
   },
   {
     src: Ranmuduoyaii,
     title: 'Ranmudu Oya lii Mini Hydro Power Plant',
     filter: 'filter-hydro',
-    link: ''
+    link: '/ongoin'
   },
   // Solar Projects
   {
     src: Embilipitiya,
     title: 'Embilipitiya 2 Sbspii Solar Power Plants',
     filter: 'filter-solar',
-    link: ''
+    link: '/ongoin'
   },
   {
     src: Rooftop,
     title: 'The Rooftop Solar Power Plant at Laugfs Rubber Factory in Horana',
     filter: 'filter-solar',
-    link: ''
+    link: '/ongoin'
   },
   {
     src: Anantaya,
     title: 'Rooftop Solar Power Plant at Anantaya Chilaw',
     filter: 'filter-solar',
-    link: ''
+    link: '/ongoin'
   },
   {
     src: Passikudah,
     title: 'Rooftop Solar Power Plant at Anantaya Passikudah',
     filter: 'filter-solar',
-    link: ''
+    link: '/ongoin'
   },
   // Add other projects...
 ];
@@ -140,9 +141,9 @@ const Portfolio = () => {
                     >
                       View
                     </button>
-                    <a href={project.link} className="mx-2 text-lg text-white" title="More Details">
+                    <Link to={project.link} className="mx-2 text-lg text-white" title="More Details">
                       More Details
-                    </a>
+                    </Link>
                   </div>
                   <h5 className="text-center text-[#2b5102] py-4 text-sm">{project.title}</h5>
                 </div>
