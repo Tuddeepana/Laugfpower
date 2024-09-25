@@ -4,8 +4,8 @@ import Footer from '../../utils/Footer';
 
 //--> Import the images --> Awards
 import Award1 from '../../assets/img/awards/award1.jpg';
-import Award2 from '../../assets/img/awards/award2.jpg';
-import Award3 from '../../assets/img/awards/award3.jpg';
+import Award2 from '../../assets/img/awards/award2.png';
+import Award3 from '../../assets/img/awards/award3.png';
 import '../../styles/style.css'
 
 
