@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import BreadCrum from "../../components/card/BreadCrum";
+import PiplineImage from "../../assets/img/pipline/pipline.jpeg";
 
 export default function Pipeline() {
   const projects = [
@@ -13,13 +14,13 @@ export default function Pipeline() {
       id: "o1",
       title: "GonnoruwaIV Solar Power Project",
       description: `Located in Gonnoruwa, Hambantota, on a 50-acre land, this ground-mounted solar power project will generate approximately 22.6 GWh of energy annually once constructed. This power plant will be LAUGFS Power's third 10 MW ground-mounted solar power plant.<br/><br/><b>Commissioned date (expected): 04/2025</b>`,
-      imgSrc: "https://laugfspower.lk/ver1/assets/img/ongoing4.PNG",
+      imgSrc: PiplineImage,
     },
     {
       id: "o2",
       title: "Manthai Wind Power Project",
       description: `This project will be LAUGFS Power’s first wind power plant. It is proposed to be constructed in the Manthai area in the Mannar District and is expected to generate 153 GWh annually when completed.<br/><br/><b>Commissioned date (expected): 06/2027</b>`,
-      imgSrc: "https://laugfspower.lk/ver1/assets/img/ongoing4.PNG",
+      imgSrc: PiplineImage,
     },
     
     // ... other projects with similar updates
@@ -44,9 +45,9 @@ export default function Pipeline() {
                 key={project.id}
                 className="flex flex-col mb-8 overflow-hidden border border-gray-300 rounded-lg shadow-lg lg:flex-row"
               >
-                <div className="w-full lg:w-1/3">
+                <div className="w-full h-64 lg:h-auto lg:w-1/3">
                   <img
-                    className="object-cover w-full h-64 sm:h-48"
+                    className="object-cover w-full h-full"
                     src={project.imgSrc}
                     alt={project.title}
                   />
