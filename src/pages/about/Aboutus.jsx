@@ -42,6 +42,7 @@ export default function AboutUs() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
+      <div>
     <div className='p-6 bg-gray-50'>
       <Navigation/>
 
@@ -134,7 +135,9 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <Footer />
+
+    </div>
+    <Footer />
     </div>
   );
 }

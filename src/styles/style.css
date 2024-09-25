@@ -12,4 +12,10 @@ body{
     border-image-slice: 1;
     border-radius: 10PX;
   }
-  
+
+/**Award page style for images*/
+.object-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
