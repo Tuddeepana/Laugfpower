@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import 'tailwindcss/tailwind.css';
-import Ranmuduoyai from '../assets/img/ongoin/ongoing1.jpg';
-import Ranmuduoyaii from '../assets/img/ongoin/ongoing2.jpg';
-import Embilipitiya from '../assets/img/ongoin/ongoing3.jpg';
-import Rooftop from '../assets/img/ongoin/ongoing4.jpg';
-import Anantaya from '../assets/img/ongoin/ongoing5.jpg';
-import Passikudah from '../assets/img/ongoin/ongoing6.jpg';
+import Modal from 'react-modal';
+import Ranmuduoyai from '../assets/img/ongoin/RanmuduoyaI.jpg';
+import Ranmuduoyaii from '../assets/img/ongoin/RanmuduoyaIII.jpg';
+import Embilipitiya from '../assets/img/ongoin/Embilipitiya.jpeg';
+import Rooftop from '../assets/img/ongoin/Horana.jpg';
+import Anantaya from '../assets/img/ongoin/Anantaya.jpeg';
+import Passikudah from '../assets/img/ongoin/AnantayaPasi.jpg';
 
 const projects = [
   //Projects Hydro
@@ -53,8 +54,8 @@ const projects = [
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('*');
-  const [photoIndex, setPhotoIndex] = useState(-1);
-  const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     AOS.init();
@@ -68,13 +69,14 @@ const Portfolio = () => {
     ? projects
     : projects.filter(project => project.filter === activeFilter);
 
-  const openLightbox = (index) => {
-    setPhotoIndex(index);
-    setLightboxIsOpen(true);
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setModalIsOpen(true);
   };
 
-  const closeLightbox = () => {
-    setLightboxIsOpen(false);
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedProject(null);
   };
 
   return (
@@ -89,25 +91,22 @@ const Portfolio = () => {
               <ul id="portfolio-flters" className="flex flex-wrap space-x-4 sm:space-x-8">
                 <li
                   onClick={() => handleFilterChange('*')}
-                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${
-                    activeFilter === '*' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
-                  }`}
+                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${activeFilter === '*' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
+                    }`}
                 >
                   All
                 </li>
                 <li
                   onClick={() => handleFilterChange('filter-solar')}
-                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${
-                    activeFilter === 'filter-solar' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
-                  }`}
+                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${activeFilter === 'filter-solar' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
+                    }`}
                 >
                   Solar
                 </li>
                 <li
                   onClick={() => handleFilterChange('filter-hydro')}
-                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${
-                    activeFilter === 'filter-hydro' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
-                  }`}
+                  className={`cursor-pointer rounded-full px-4 py-2 border-2 transition-colors duration-300 ${activeFilter === 'filter-hydro' ? 'border-blue-500 text-blue-500' : 'border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500'
+                    }`}
                 >
                   Hydro
                 </li>
@@ -129,15 +128,15 @@ const Portfolio = () => {
                 <div className="relative overflow-hidden rounded-lg shadow-lg portfolio-wrap group">
                   <img
                     src={project.src}
-                    className="w-full transition-transform duration-300 transform img-fluid group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 transform img-fluid group-hover:scale-105"
                     alt={project.title}
-                    onClick={() => openLightbox(index)}
+                    onClick={() => openModal(project)}
                   />
                   <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-50 opacity-5 group-hover:opacity-100">
                     <button
                       className="mx-2 text-lg text-white"
                       title={project.title}
-                      onClick={(e) => { e.preventDefault(); openLightbox(index); }}
+                      onClick={(e) => { e.preventDefault(); openModal(project); }}
                     >
                       View
                     </button>
@@ -145,7 +144,7 @@ const Portfolio = () => {
                       More Details
                     </a>
                   </div>
-                  <h5 className="text-center text-[#2b5102] py-4">{project.title}</h5>
+                  <h5 className="text-center text-[#2b5102] py-4 text-sm">{project.title}</h5>
                 </div>
               </div>
             ))}
@@ -153,12 +152,26 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {lightboxIsOpen && (
-        <Lightbox
-          mainSrc={filteredProjects[photoIndex].src}
-          onCloseRequest={closeLightbox}
-        />
-      )}
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Project Modal"
+        className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-75"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+      >
+        {selectedProject && (
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+            <img src={selectedProject.src} alt={selectedProject.title} className="w-full h-auto" />
+            <div className="p-4">
+              <h2 className="text-2xl font-semibold mb-4">{selectedProject.title}</h2>
+              <button onClick={closeModal} className="text-white bg-gradient-to-r from-[#329946] to-[#99c83b] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 transition-colors duration-300"
+>
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+      </Modal>
     </section>
   );
 };
