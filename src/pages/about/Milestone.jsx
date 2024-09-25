@@ -9,16 +9,15 @@ import Footer from '../../utils/Footer';
 import BackgroundImage from '../../assets/img/background/milestone.jpg'; // Import the background image
 import BreadCrum from '../../components/card/BreadCrum';
 
-
-
 // Add for this page styles here 
 const dateStyle = {
   fontWeight: 'bold',
   fontSize: '1.25rem', // Equivalent to text-xl in Tailwind CSS
 };
 
+
+
 const milestoneStyle = {
-  backgroundImage: `url(${BackgroundImage})`, // Use the imported image
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   minHeight: '100vh', // Make sure it covers the full viewport height
@@ -28,10 +27,11 @@ export default function Milestone() {
   return (
     <div style={milestoneStyle}>
       <Navigation />
-      {/*add breadcrum */}
       <div className='p-12'>
         <BreadCrum text="MILESTONE" />
       </div>
+
+      <img src={BackgroundImage} alt="Milestone Background" style={{ width: '100%', height: 'auto' }} />
 
       <br />
       <br />
@@ -112,27 +112,7 @@ export default function Milestone() {
         />
       </VerticalTimeline> */}
     <div className="flex-grow">
-    <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+   
       <Footer />
       </div>
     </div>
