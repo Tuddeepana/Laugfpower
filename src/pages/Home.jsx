@@ -112,18 +112,18 @@ export default function Home() {
                 text3="Commissioned date (expected): 12/2024"
                 buttonText="View More"
                 imageSrc={Project1}
-                link="/pipline"
+                link="/pipline#o1"
               />
             </div>
             <div className="w-full px-4 mb-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
               <ReusableCard
-                title="Manthai Wind Power Project"
-                text1="Plant Install Capacity: 50 MW"
-                text2="Location: Mannar"
-                text3="Commissioned date (expected): 06/2027"
-                buttonText="View More"
-                imageSrc={Project2}
-                link="/pipline"
+                  title="Manthai Wind Power Project"
+                  text1="Plant Install Capacity: 50 MW"
+                  text2="Location: Mannar"
+                  text3="Commissioned date (expected): 06/2027"
+                  buttonText="View More"
+                  imageSrc={Project2}
+                  link="/pipline#o2"
               />
             </div>
             <div className="w-full px-4 mb-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -134,7 +134,7 @@ export default function Home() {
                 text3="Commissioned date (expected): 06/2025"
                 buttonText="View More"
                 imageSrc={Project3}
-                link="/pipline"
+                link="/pipline#o1"
               />
             </div>
           </div>
