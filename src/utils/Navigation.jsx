@@ -4,17 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/icons/Logo/laugfspower.png'; 
 
-
-
-
 export default function Navigation() {
-
-  
   return (
-    <div >
+    <div>
       <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-        <Container >
-          <img className="w-auto h-9" src={Logo} alt="LAUGFS Logo" />
+        <Container>
+          <Nav.Link href="/">
+            <img className="w-auto h-9" src={Logo} alt="LAUGFS Logo" />
+          </Nav.Link>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
