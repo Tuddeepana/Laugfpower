@@ -19,7 +19,7 @@ export default function Navigation() {
               <Nav.Link href="/" className="nav-link-bold">HOME</Nav.Link>
               <NavDropdown title="ABOUT" id="basic-nav-dropdown" className="nav-link-bold">
                 <NavDropdown.Item href="/aboutus" className="nav-link-bold">ABOUT</NavDropdown.Item>
-                <NavDropdown.Item href="/milestone" className="nav-link-bold">MILESTONE</NavDropdown.Item>
+                <NavDropdown.Item href="/milestone" className="nav-link-bold">MILESTONES</NavDropdown.Item>
                 <NavDropdown.Item href="/awards" className="nav-link-bold">AWARDS</NavDropdown.Item>
                 <NavDropdown.Item href="directors" className="nav-link-bold">BOARD OF DIRECTORS</NavDropdown.Item>
               </NavDropdown>

@@ -76,24 +76,26 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="flex flex-col mt-6 md:flex-row">
-        <div className="p-4 md:w-1/2">
-          <img src={img} alt="Description of GIF" className="object-cover w-auto h-auto rounded-md" />
+        {/* gif */}
+        <div className="flex flex-col mt-6 md:flex-row">
+            <div className="flex items-center justify-center w-full h-screen">
+                <img src={img} alt="Description of GIF" className="object-cover w-full h-full rounded-md"/>
+            </div>
+            {/*this is use old html web site after new requirement change if need to change this part*/}
+            {/*<div className="flex flex-wrap gap-4 p-4 md:w-1/2">*/}
+            {/*  <RedRectangle title="Renewable Energy Integration" />*/}
+            {/*  <RedRectangle title="Community Engagement" />*/}
+            {/*  <RedRectangle title="Technological Innovation" />*/}
+            {/*  <RedRectangle title="Environmental Conservation" />*/}
+            {/*</div>*/}
         </div>
-        <div className="flex flex-wrap gap-4 p-4 md:w-1/2">
-          <RedRectangle title="Renewable Energy Integration" />
-          <RedRectangle title="Community Engagement" />
-          <RedRectangle title="Technological Innovation" />
-          <RedRectangle title="Environmental Conservation" />
+
+        {/* Third Section - Pipeline Projects */}
+        <div className="mt-6">
+            <Portfolio/>
         </div>
-      </div>
 
-      {/* Third Section - Pipeline Projects */}
-      <div className="mt-6">
-        <Portfolio />
-      </div>
-
-      {/* Fourth Section - Pipeline Projects */}
+        {/* Fourth Section - Pipeline Projects */}
       <div className="mt-6">
         <h1 className="text-4xl font-bold text-center text-blue-900">
           Projects in the Pipeline

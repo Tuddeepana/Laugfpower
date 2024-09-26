@@ -104,7 +104,7 @@ const OurLeadership = () => {
       <br />
       <div className="mainwrapper">
         <div className='p-6'>
-          <BreadCrum text="DIRECTORS" />
+          <BreadCrum text="BOARD OF DIRECTORS" />
         </div>
         <section className="py-10 text-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <br />

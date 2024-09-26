@@ -28,7 +28,7 @@ export default function Milestone() {
     <div style={milestoneStyle}>
       <Navigation />
       <div className='p-12'>
-        <BreadCrum text="MILESTONE" />
+        <BreadCrum text="MILESTONES" />
       </div>
 
       <img src={BackgroundImage} alt="Milestone Background" style={{ width: '100%', height: 'auto' }} />
