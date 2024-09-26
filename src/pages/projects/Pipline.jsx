@@ -39,8 +39,8 @@ export default function Pipeline() {
   return (
       <div>
         <Navigation />
-        <div className='p-12'>
-          <BreadCrum text="PIPELINE"/>
+        <div className='mt-3 p-6'>
+          <BreadCrum text="PROJECTS IN THE PIPELINE"/>
         </div>
         <main className="max-w-screen-lg px-4 mx-auto" data-aos="fade-down">
           <section className="p-6">

@@ -41,7 +41,7 @@ export default function Investors() {
 
 </div>
        {/*add breadcrum */}
-       <div className='p-6'>
+       <div className='mt-3 w-full'>
       <BreadCrum text="INVESTOR RELATIONS"/>
       </div>
 

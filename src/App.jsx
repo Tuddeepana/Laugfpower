@@ -18,14 +18,14 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/career" element={<Career />} />
-      <Route path="/invstor" element={<Investors />} />
+      <Route path="/investor-relations" element={<Investors />} />
       <Route path="/aboutus" element={<Aboutus />} />
       <Route path="/herosection" element={<HeroSection />} />
       <Route path="/milestone" element={<Milestone />} />
       <Route path="/directors" element={<Directors />} />
       <Route path="/awards" element={<Awards />} />
-      <Route path="/ongoin" element={<OngoingProjects />} />
-      <Route path="/pipline" element={<Pipline />} />
+      <Route path="/ongoin-projects" element={<OngoingProjects />} />
+      <Route path="/project-in-pipline" element={<Pipline />} />
     </Routes>
   );
 }

@@ -78,7 +78,7 @@ export default function Home() {
 
         {/* gif */}
         <div className="flex flex-col mt-6 md:flex-row">
-            <div className="flex items-center justify-center w-full h-screen">
+            <div className="flex items-center justify-center w-full h-96">
                 <img src={img} alt="Description of GIF" className="object-cover w-full h-full rounded-md"/>
             </div>
             {/*this is use old html web site after new requirement change if need to change this part*/}

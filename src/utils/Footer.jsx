@@ -27,10 +27,10 @@ export default function Footer() {
               <div className="col-span-1 md:col-span-2 lg:col-span-1">
                 <p className="text-base font-semibold text-white">OUR PROJECTS</p>
                 <ul className="mt-6 space-y-4">
-                  <li><a href="/ongoin" aria-label="Ongoing Projects"
+                  <li><a href="/ongoin-projects" aria-label="Ongoing Projects"
                          className="flex text-sm text-white transition-all duration-200 hover:text-[#3498DB] focus:text-[#3498DB]">ONGOING
                     PROJECTS</a></li>
-                  <li><a href="/pipline" aria-label="Projects in the Pipeline"
+                  <li><a href="/project-in-pipline" aria-label="Projects in the Pipeline"
                          className="flex text-sm text-white transition-all duration-200 hover:text-[#3498DB] focus:text-[#3498DB]">PROJECTS
                     IN THE PIPELINE</a></li>
                 </ul>
