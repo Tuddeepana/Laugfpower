@@ -32,11 +32,9 @@ export default function Milestone() {
       </div>
 
       <img src={BackgroundImage} alt="Milestone Background" style={{ width: '100%', height: 'auto' }} />
+      <Footer />
 
-      <br />
-      <br />
-      <br />
-
+    
       {/* <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -111,10 +109,8 @@ export default function Milestone() {
           icon={<StarIcon />}
         />
       </VerticalTimeline> */}
-    <div className="flex-grow">
-   
-      <Footer />
-      </div>
+      
+    
     </div>
   );
 }
