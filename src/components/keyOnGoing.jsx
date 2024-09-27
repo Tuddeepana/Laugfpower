@@ -17,48 +17,47 @@ const projects = [
     src: Ranmuduoyai,
     title: 'Ranmudu Oya I Mini Hydro Power Plant',
     filter: 'filter-hydro',
-    link: '/ongoin#o1'
+    link: '/ongoin-projects#o1'
   },
   {
     id: 'o2',
     src: Ranmuduoyaii,
     title: 'Ranmudu Oya lii Mini Hydro Power Plant',
     filter: 'filter-hydro',
-    link: '/ongoin#o2'
+    link: '/ongoin-projects#o2'
   },
   {
     id: 'o3',
     src: Embilipitiya,
     title: 'Embilipitiya 2 Sbspii Solar Power Plants',
     filter: 'filter-solar',
-    link: '/ongoin#o3'
+    link: '/ongoin-projects#o3'
   },
   {
     id: 'o4',
     src: Rooftop,
     title: 'The Rooftop Solar Power Plant at Laugfs Rubber Factory in Horana',
     filter: 'filter-solar',
-    link: '/ongoin#o4'
+    link: '/ongoin-projects#o4'
   },
   {
     id: 'o5',
     src: Anantaya,
     title: 'Rooftop Solar Power Plant at Anantaya Chilaw',
     filter: 'filter-solar',
-    link: '/ongoin#o5'
+    link: '/ongoin-projects#o5'
   },
   {
     id: 'o6',
     src: Passikudah,
     title: 'Rooftop Solar Power Plant at Anantaya Passikudah',
     filter: 'filter-solar',
-    link: '/ongoin#o6'
+    link: '/ongoin-projects#o6'
   },
 ];
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('*');
-  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const navigate = useNavigate();
 
@@ -74,18 +73,12 @@ const Portfolio = () => {
       ? projects
       : projects.filter(project => project.filter === activeFilter);
 
-  const openModal = (project) => {
+  const handleViewMore = (project) => {
     setSelectedProject(project);
-    setModalIsOpen(true);
   };
 
   const closeModal = () => {
-    setModalIsOpen(false);
     setSelectedProject(null);
-  };
-
-  const handleViewMore = (id) => {
-    navigate(`/ongoin#${id}`);
   };
 
   return (
@@ -131,13 +124,13 @@ const Portfolio = () => {
                           src={project.src}
                           className="w-full h-full object-cover transition-transform duration-300 transform img-fluid group-hover:scale-105"
                           alt={project.title}
-                          onClick={() => openModal(project)}
+                          onClick={() => handleViewMore(project)}
                       />
                       <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-50 opacity-5 group-hover:opacity-100">
                         <button
                             className="mx-2 text-lg text-white"
                             title={project.title}
-                            onClick={(e) => { e.preventDefault(); handleViewMore(project.id); }}
+                            onClick={(e) => { e.preventDefault(); handleViewMore(project); }}
                         >
                           View
                         </button>
@@ -151,30 +144,31 @@ const Portfolio = () => {
               ))}
             </div>
           </div>
-        </div>
+          </div>
 
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel="Project Modal"
-            className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-75"
-            overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+<Modal
+    isOpen={!!selectedProject}
+    onRequestClose={closeModal}
+    contentLabel="Project Details"
+    className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-50"
+    overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+>
+  {selectedProject && (
+      <div className="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto relative">
+        <button 
+            onClick={closeModal} 
+            className="absolute top-0 right-0 m-4 text-gray-500 hover:text-gray-700 bg-gray-200 rounded-full p-2"
+            aria-label="Close"
         >
-          {selectedProject && (
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                <img src={selectedProject.src} alt={selectedProject.title} className="w-full h-auto" />
-                <div className="p-4">
-                  <h2 className="text-2xl font-semibold mb-4">{selectedProject.title}</h2>
-                  <button onClick={closeModal} className="text-white bg-gradient-to-r from-[#329946] to-[#99c83b] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 transition-colors duration-300"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-          )}
-        </Modal>
-      </section>
-  );
+          &times;
+        </button>
+        <img src={selectedProject.src} alt={selectedProject.title} className="w-full h-auto" />
+        <h2 className="text-2xl font-semibold mt-4">{selectedProject.title}</h2>
+      </div>
+  )}
+</Modal>
+</section>
+);
 };
 
 export default Portfolio;
