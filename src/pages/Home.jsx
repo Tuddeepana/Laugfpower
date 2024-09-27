@@ -76,19 +76,21 @@ export default function Home() {
         </h1>
       </div>
 
-        {/* gif */}
-        <div className="flex flex-col mt-6 md:flex-row">
-            <div className="flex items-center justify-center w-full h-96">
-                <img src={img} alt="Description of GIF" className="object-cover w-full h-full rounded-md"/>
-            </div>
-            {/*this is use old html web site after new requirement change if need to change this part*/}
-            {/*<div className="flex flex-wrap gap-4 p-4 md:w-1/2">*/}
-            {/*  <RedRectangle title="Renewable Energy Integration" />*/}
-            {/*  <RedRectangle title="Community Engagement" />*/}
-            {/*  <RedRectangle title="Technological Innovation" />*/}
-            {/*  <RedRectangle title="Environmental Conservation" />*/}
-            {/*</div>*/}
-        </div>
+      <div className="flex flex-col mt-6 md:flex-row">
+  <div className="flex items-center justify-center w-full h-screen">
+    <iframe
+      width="80%"
+      height="80%"
+      src="https://www.youtube.com/embed/Q-Qxp7Eljg0"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="rounded-md"
+    ></iframe>
+  </div>
+</div>
+     
 
         {/* Third Section - Pipeline Projects */}
         <div className="mt-6">
