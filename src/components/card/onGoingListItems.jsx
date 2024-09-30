@@ -12,6 +12,9 @@ import Embilipitiya from '../../assets/img/ongoin/Embilipitiya.jpeg';
 import Horana from '../../assets/img/ongoin/Horana.jpg';
 import Anantaya from '../../assets/img/ongoin/Anantaya.jpeg';
 import AnantayaPassikudah from '../../assets/img/ongoin/AnantayaPasi.jpg';
+import Aronchi from '../../assets/img/ongoin/Arnochi.jpg';
+import Kehelgamuwa from '../../assets/img/ongoin/Kehelgamuwa.jpg';
+import Ginigathena from '../../assets/img/ongoin/Ginigathhena.jpg';
 
 const OngoingProjects = () => {
   useEffect(() => {
@@ -75,6 +78,41 @@ const OngoingProjects = () => {
       description: `Commissioned on the 12th of December 2019, the Rooftop Solar Power Plant at Anantaya Resorts and Spa, Passikudah holds an installed capacity of 182.5 kWp (150 kW). 
       This plant adds to the sustainability of the hotel.`,
       imgSrc: AnantayaPassikudah,
+    },
+// new added--> Need to update image
+    {
+      id: 'o7',
+      title: 'KEHELGAMU OYA II MINI HYDRO POWER (PVT) LTD',
+      description: `The Kehekgamu Oya II Mini Hydro Power Plant is located in Dagampitiya, Ginigathhena. This state-of-the-art facility will have an installed capacity of 2MW once commissioned. The plant was commissioned in December 2023`,
+      imgSrc: Kehelgamuwa,
+    },
+
+    {
+      id: 'o8',
+      title: 'IRIS ECO POWER LANKA (PVT) LTD – IRIS (BARUTHANKANDA) SOLAR POWER PLANT',
+      description: `The Iris (Baruthankanda) Solar Power Plant is situated in Hambantota. With an exceptional installed capacity of 10 MW, this solar power plant commenced operations on the 7th of February 2017. It exemplifies what can be achieved with sustainable energy. Together with the Anorchi (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, contributing a total of 20 MW to the national grid.`,
+      imgSrc: AnantayaPassikudah,
+    },
+
+    {
+      id: 'o9',
+      title: 'IRIS ECO POWER LANKA (PVT) LTD – EMBILIPITIYA 3 SBSPII SOLAR POWER PLANT',
+      description: `The Embilipitiya 3 SBSPII Solar Power Plant was commissioned on the 23rd of October 2019, with a capacity of 1 MW.`,
+      imgSrc: AnantayaPassikudah,
+    },
+
+    {
+      id: 'o10',
+      title: 'ANORCHI LANKA (PVT) LTD – ANORCHI (BARUTHANKANDA) SOLAR POWER PLANT',
+      description: `The Anorchi Solar Power Plant is located in Hambantota and was commissioned on the 7th of February 2017. With an impressive capacity of 10 MW, Together with the Iris (Baruthankanda) Solar Power Plant, it forms the largest solar power station in Sri Lanka, contributing a total of 20 MW to the national grid.`,
+      imgSrc: Aronchi,
+    },
+
+    {
+      id: 'o11',
+      title: 'GINIGATHHENA THINIYAGALA MINI HYDRO POWER (PVT) LTD – GINIGATHHENA THINIYAGALA MINI HYDRO POWER PLANT',
+      description: `The Ginigathena Thiniyagala Mini Hydro Power Plant was commissioned on the 9th of June 2016, in Horakada, Ginigathhena. With a robust installation capacity of 700 kW, this plant uses 2 Pelton turbines, operating at a net head of 170 meters and a flow rate of 0.52 m3/s.`,
+      imgSrc: Ginigathena,
     },
   ];
 
