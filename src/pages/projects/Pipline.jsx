@@ -6,19 +6,23 @@ import "aos/dist/aos.css";
 import BreadCrum from "../../components/card/BreadCrum";
 import PiplineImage from "../../assets/img/pipline/pipline.jpeg";
 
+//Import the images
+import Project1 from '../../assets/img/pipline/project1.jpg';
+import Project2 from '../../assets/img/pipline/project2.jpg';
+
 export default function Pipeline() {
   const projects = [
     {
       id: "o1",
       title: "GonnoruwaIV Solar Power Project",
       description: `Located in Gonnoruwa, Hambantota, on a 50-acre land, this ground-mounted solar power project will generate approximately 22.6 GWh of energy annually once constructed. This power plant will be LAUGFS Power's third 10 MW ground-mounted solar power plant.<br/><br/><b>Commissioned date (expected): 04/2025</b>`,
-      imgSrc: PiplineImage,
+      imgSrc: Project1,
     },
     {
       id: "o2",
       title: "Manthai Wind Power Project",
       description: `This project will be LAUGFS Power’s first wind power plant. It is proposed to be constructed in the Manthai area in the Mannar District and is expected to generate 153 GWh annually when completed.<br/><br/><b>Commissioned date (expected): 06/2027</b>`,
-      imgSrc: PiplineImage,
+      imgSrc: Project2,
     },
     // ... other projects
   ];
