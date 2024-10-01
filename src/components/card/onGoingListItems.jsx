@@ -15,6 +15,8 @@ import AnantayaPassikudah from '../../assets/img/ongoin/AnantayaPasi.jpg';
 import Aronchi from '../../assets/img/ongoin/Arnochi.jpg';
 import Kehelgamuwa from '../../assets/img/ongoin/Kehelgamuwa.jpg';
 import Ginigathena from '../../assets/img/ongoin/Ginigathhena.jpg';
+import Embiliptiya3 from '../../assets/img/ongoin/Embilipitiya3.jpeg';
+import AnantayaPasikudah from '../../assets/img/ongoin/AnantayaPasikudah.jpg'
 
 const OngoingProjects = () => {
   useEffect(() => {
@@ -58,7 +60,7 @@ const OngoingProjects = () => {
     },
     {
       id: 'o4',
-      title: 'The Rooftop Solar Power Plant At Laugfs Rubber Factory In Horana',
+      title: 'The Rooftop Solar Power Plant At LAUGFS Rubber Factory In Horana',
       description: `The Rooftop Solar Power Plant at LAUGFS Rubber Factory in Horana has an installed capacity of 375 kWp (270 kW). Commissioned in two phases, 
       with Phase I on the 17th of August 2018 and Phase II on the 11th of January 2019, 
       this plant helps the factory generate clean energy to the national grid.`,
@@ -77,7 +79,7 @@ const OngoingProjects = () => {
       title: 'Rooftop Solar Power Plant At Anantaya Passikudah',
       description: `Commissioned on the 12th of December 2019, the Rooftop Solar Power Plant at Anantaya Resorts and Spa, Passikudah holds an installed capacity of 182.5 kWp (150 kW). 
       This plant adds to the sustainability of the hotel.`,
-      imgSrc: AnantayaPassikudah,
+      imgSrc:AnantayaPasikudah ,
     },
 // new added--> Need to update image
     {
@@ -98,7 +100,7 @@ const OngoingProjects = () => {
       id: 'o9',
       title: 'IRIS ECO POWER LANKA (PVT) LTD – EMBILIPITIYA 3 SBSPII SOLAR POWER PLANT',
       description: `The Embilipitiya 3 SBSPII Solar Power Plant was commissioned on the 23rd of October 2019, with a capacity of 1 MW.`,
-      imgSrc: AnantayaPassikudah,
+      imgSrc: Embiliptiya3,
     },
 
     {
