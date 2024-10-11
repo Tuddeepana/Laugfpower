@@ -5,11 +5,11 @@ export default function BreadCrum({ text }) {
     <div 
       className="w-full p-4"
       style={{
-        background: 'linear-gradient(45deg, #389b49, #7fb948)',
+        // background: 'linear-gradient(45deg, #389b49, #7fb948)',
       }}
     >
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-center text-white">{text}</h1>
+        <h1 className="text-4xl font-bold text-center text-blue-900	">{text}</h1>
       </div>
     </div>
   );
