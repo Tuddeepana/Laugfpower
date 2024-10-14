@@ -12,7 +12,7 @@ const BumpCrumbx= ({Current})=>{
             </li> */}
             {/* <li className="text-white">{Current}</li> */}
           </ol>
-          <h2 className="mt-2 text-2xl text-white">{Current}</h2>
+          <h2 className="mt-2 text-2xl text-white ">{Current}</h2>
         </div>
       </section>
     );

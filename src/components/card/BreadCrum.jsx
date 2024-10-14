@@ -9,7 +9,7 @@ export default function BreadCrum({ text }) {
       }}
     >
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-center text-blue-900	">{text}</h1>
+        <h1 className="text-4xl font-bold text-left text-green-600	">{text}</h1>
       </div>
     </div>
   );
